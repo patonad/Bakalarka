@@ -1,0 +1,2 @@
+1;Žigmund Macko;2;Zlatko Opluštil;3;Levoslav Marek;4;Jerry Chovan;5;Sebastián Kozák;6;Tichomír Doležal;7;Igor Pollák;8;Dezider Dudík;9;Félix Pelikán
+;10;Ferdinand Ondráš;11;Pavol Duška;12;Ignác Martinek;13;Dobroslav Poliak;14;Ľudomil Tomáška;15;Richard Hanúska;16;Vlastimil Martinko;17;Jaromír Kuna;18;Alojz Dzurjanin;19;Július Beňuška;20;František Mraz;
