@@ -53,3 +53,14 @@ C:\Users\Pato\Desktop\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug
 C:\Users\Pato\Desktop\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\ReklamnyModul.csproj.GenerateResource.Cache
 C:\Users\Pato\Desktop\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\ReklamnyModul.dll
 C:\Users\Pato\Desktop\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\ReklamnyModul.pdb
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\bin\Debug\pluginy\ReklamnyModul.dll
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\bin\Debug\pluginy\ReklamnyModul.pdb
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\ReklamnyModul.csprojResolveAssemblyReference.cache
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\Interop.WMPLib.dll
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\ReklamnyModul.csproj.ResolveComReference.cache
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\ReklamnyModul.Ovladac.resources
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\ReklamnyModul.Zobrazovac.resources
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\ReklamnyModul.csproj.GenerateResource.Cache
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\ReklamnyModul.dll
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\Debug\ReklamnyModul.pdb

@@ -39,7 +39,7 @@ namespace svetelna_tabula
                     label.Visible = true;
                     if (y == 0)
                     {
-                        label.Font = new Font("Arial", 10, FontStyle.Bold);
+                        label.Font = new Font("Arial", 9, FontStyle.Bold);
                     }
                     Controls.Add(label);
 

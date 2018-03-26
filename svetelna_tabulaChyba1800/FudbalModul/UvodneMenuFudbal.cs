@@ -71,6 +71,7 @@ namespace FudbalModul
 
         private void lExitFudbal_Click(object sender, EventArgs e)
         {
+            dat.odpoj();
             this.Close();
         }
 

@@ -60,3 +60,14 @@ C:\Users\Pato\Desktop\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\Ho
 C:\Users\Pato\Desktop\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\HokejModul.csproj.GenerateResource.Cache
 C:\Users\Pato\Desktop\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\HokejModul.dll
 C:\Users\Pato\Desktop\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\HokejModul.pdb
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\bin\Debug\pluginy\HokejModul.dll.config
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\bin\Debug\pluginy\HokejModul.dll
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\bin\Debug\pluginy\HokejModul.pdb
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\HokejModul.csprojResolveAssemblyReference.cache
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\HokejModul.HlavnaPlochaHokej.resources
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\HokejModul.Properties.Resources.resources
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\HokejModul.RiadiaceOknoHokej.resources
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\HokejModul.UvodneMenuHokej.resources
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\HokejModul.csproj.GenerateResource.Cache
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\HokejModul.dll
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\HokejModul\obj\Debug\HokejModul.pdb

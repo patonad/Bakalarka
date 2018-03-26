@@ -50,7 +50,71 @@ namespace svetelna_tabula
 
 
         }
+        public List<List<string>> nacitajOdohrateZapasy(int id_tymHostia, int id_tymDomaci)
+        {
+            OracleCommand c = new OracleCommand("select zapas.ID_ZAPAS, zapas.GOLHOSTIA, zapas.GOLDOMACI,zapas.DATUM, dom.NAZOV as domaci, hos.NaZOV as hostia "+
+            "from zapas join tym dom on (zapas.TYM_DOMACI = dom.ID_TYM) join tym hos on (zapas.TYM_HOSTIA = hos.ID_TYM)"+
+             "where TYM_DOMACI = '"+ id_tymHostia + "' or TYM_HOSTIA = '"+id_tymHostia+"' order by id_zapas desc FETCH FIRST 10 ROWS ONLY", con);
+            OracleDataReader reader1 = c.ExecuteReader();
+            c = new OracleCommand("select zapas.ID_ZAPAS, zapas.GOLHOSTIA, zapas.GOLDOMACI,zapas.DATUM, dom.NAZOV as domaci, hos.NaZOV as hostia " +
+            "from zapas join tym dom on (zapas.TYM_DOMACI = dom.ID_TYM) join tym hos on (zapas.TYM_HOSTIA = hos.ID_TYM)" +
+             "where TYM_DOMACI = '" + id_tymDomaci + "' or TYM_HOSTIA = '" + id_tymDomaci + "' order by id_zapas desc FETCH FIRST 10 ROWS ONLY", con);
+            OracleDataReader reader2 = c.ExecuteReader();
+            List<List<string>> zoznam = new List<List<string>>();
+            List<string> list = new List<string>();
+            list.Add("Nazov týmu");
+            list.Add("Skóre");
+            list.Add("Nazov týmu");
+            list.Add("Nazov týmu");
+            list.Add("Skóre");
+            list.Add("Nazov týmu");
+            zoznam.Add(list);
+            while (reader1.Read() && reader2.Read())
+            {
+                List<string> l = new List<string>();
+                l.Add(reader1["domaci"].ToString());
+                l.Add(reader1["GOLDOMACI"].ToString() +" : "+ reader1["GOLHOSTIA"].ToString());
+                l.Add(reader1["hostia"].ToString());
+                l.Add(reader2["domaci"].ToString());
+                l.Add(reader2["GOLDOMACI"].ToString() + " : " + reader2["GOLHOSTIA"].ToString());
+                l.Add(reader2["hostia"].ToString());
+                zoznam.Add(l);
+            }
+            return zoznam;
 
+
+        }
+        public List<List<string>> nacitajTop10Celkovo(string sport)
+        {
+            OracleCommand c = new OracleCommand("select  meno, CISLO,PRIEZVISKO,POCET_GOLOV,POCET_ASISTENCII,(POCET_ASISTENCII + POCET_GOLOV) as" +
+            " score, tym.NAZOV from hraci join tym using(id_tym) WHERE sport = '" + sport + "'order by score desc FETCH FIRST 10 ROWS ONLY", con);
+            OracleDataReader reader = c.ExecuteReader();
+            List<List<string>> zoznam = new List<List<string>>();
+            List<string> list = new List<string>();
+            list.Add("Čislo harča");
+            list.Add("Meno harča");
+            list.Add("Priezvisko hráča");
+            list.Add("Počet gólov");
+            list.Add("Počet asistencii");
+            list.Add("Celkove skóre");
+            list.Add("Názov týmu");
+            zoznam.Add(list);
+            while (reader.Read())
+            {
+                List<string> l = new List<string>();
+                l.Add(reader["Cislo"].ToString());
+                l.Add(reader["meno"].ToString());
+                l.Add(reader["priezvisko"].ToString());
+                l.Add(reader["pocet_golov"].ToString());
+                l.Add(reader["pocet_asistencii"].ToString());
+                l.Add(reader["score"].ToString());
+                l.Add(reader["nazov"].ToString());
+                zoznam.Add(l);
+            }
+            return zoznam;
+
+
+        }
         public List<List<string>> nacitajTop10(int id_tym)
         {
             OracleCommand c = new OracleCommand("select  meno, CISLO,PRIEZVISKO,POCET_GOLOV,POCET_ASISTENCII,(POCET_ASISTENCII + POCET_GOLOV) as"+
