@@ -33,7 +33,7 @@ namespace HokejModul
             int hos = dat.zistiCiJaTym(tBHostia.Text, "Hokej");
             if ( hos == 0)
             {
-                MessageBox.Show("Tym1 " + tBHostia.Text + " nebol najdený.");
+                MessageBox.Show("Tym " + tBHostia.Text + " nebol najdený.");
             }
             else {
                 je = true;
@@ -41,7 +41,7 @@ namespace HokejModul
             int dom = dat.zistiCiJaTym(tBDomaci.Text, "Hokej");
             if (dom == 0)
             {
-                MessageBox.Show("Tym1 " + tBDomaci.Text + " nebol najdený.");
+                MessageBox.Show("Tym " + tBDomaci.Text + " nebol najdený.");
             }else if(je){
                 idZapasu = dat.pridajZapas(hos, dom);
             }
@@ -78,6 +78,11 @@ namespace HokejModul
             dat.odpoj();
             this.Close();
 
+        }
+
+        private void UvodneMenuHokej_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            dat.odpoj();
         }
     }
 }

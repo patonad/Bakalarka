@@ -42,11 +42,11 @@
             // lScoreDomaci
             // 
             this.lScoreDomaci.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lScoreDomaci.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.75F);
+            this.lScoreDomaci.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.lScoreDomaci.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lScoreDomaci.Location = new System.Drawing.Point(610, 209);
+            this.lScoreDomaci.Location = new System.Drawing.Point(615, 223);
             this.lScoreDomaci.Name = "lScoreDomaci";
-            this.lScoreDomaci.Size = new System.Drawing.Size(63, 56);
+            this.lScoreDomaci.Size = new System.Drawing.Size(60, 60);
             this.lScoreDomaci.TabIndex = 39;
             this.lScoreDomaci.Text = "00";
             this.lScoreDomaci.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -56,9 +56,9 @@
             this.lScoreHOSTIA.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lScoreHOSTIA.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lScoreHOSTIA.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lScoreHOSTIA.Location = new System.Drawing.Point(117, 209);
+            this.lScoreHOSTIA.Location = new System.Drawing.Point(128, 223);
             this.lScoreHOSTIA.Name = "lScoreHOSTIA";
-            this.lScoreHOSTIA.Size = new System.Drawing.Size(60, 56);
+            this.lScoreHOSTIA.Size = new System.Drawing.Size(60, 60);
             this.lScoreHOSTIA.TabIndex = 38;
             this.lScoreHOSTIA.Text = "00";
             this.lScoreHOSTIA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -68,9 +68,9 @@
             this.LBdomaci.BackColor = System.Drawing.Color.Transparent;
             this.LBdomaci.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.75F);
             this.LBdomaci.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.LBdomaci.Location = new System.Drawing.Point(526, 158);
+            this.LBdomaci.Location = new System.Drawing.Point(525, 176);
             this.LBdomaci.Name = "LBdomaci";
-            this.LBdomaci.Size = new System.Drawing.Size(223, 39);
+            this.LBdomaci.Size = new System.Drawing.Size(240, 40);
             this.LBdomaci.TabIndex = 37;
             this.LBdomaci.Text = "Tým domácich";
             this.LBdomaci.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -80,11 +80,11 @@
             this.LbHostia.BackColor = System.Drawing.Color.Transparent;
             this.LbHostia.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.75F);
             this.LbHostia.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.LbHostia.Location = new System.Drawing.Point(39, 158);
+            this.LbHostia.Location = new System.Drawing.Point(40, 176);
             this.LbHostia.Name = "LbHostia";
-            this.LbHostia.Size = new System.Drawing.Size(228, 39);
+            this.LbHostia.Size = new System.Drawing.Size(240, 40);
             this.LbHostia.TabIndex = 36;
-            this.LbHostia.Text = "Tým hostí";
+            this.LbHostia.Text = "Tým";
             this.LbHostia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lPolcasFudbal
@@ -93,11 +93,12 @@
             this.lPolcasFudbal.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lPolcasFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.75F);
             this.lPolcasFudbal.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lPolcasFudbal.Location = new System.Drawing.Point(440, 281);
+            this.lPolcasFudbal.Location = new System.Drawing.Point(461, 300);
             this.lPolcasFudbal.Name = "lPolcasFudbal";
             this.lPolcasFudbal.Size = new System.Drawing.Size(36, 39);
             this.lPolcasFudbal.TabIndex = 35;
             this.lPolcasFudbal.Text = "1";
+            this.lPolcasFudbal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -105,18 +106,19 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.75F);
             this.label2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label2.Location = new System.Drawing.Point(292, 288);
+            this.label2.Location = new System.Drawing.Point(317, 306);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 32);
             this.label2.TabIndex = 34;
             this.label2.Text = "POLČAS:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lCasFudbal
             // 
             this.lCasFudbal.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lCasFudbal.Font = new System.Drawing.Font("Arial", 50F, System.Drawing.FontStyle.Bold);
             this.lCasFudbal.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lCasFudbal.Location = new System.Drawing.Point(285, 158);
+            this.lCasFudbal.Location = new System.Drawing.Point(292, 170);
             this.lCasFudbal.Name = "lCasFudbal";
             this.lCasFudbal.Size = new System.Drawing.Size(215, 91);
             this.lCasFudbal.TabIndex = 33;
@@ -126,11 +128,11 @@
             // lGolHrac
             // 
             this.lGolHrac.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lGolHrac.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.lGolHrac.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.lGolHrac.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lGolHrac.Location = new System.Drawing.Point(144, 86);
+            this.lGolHrac.Location = new System.Drawing.Point(149, 84);
             this.lGolHrac.Name = "lGolHrac";
-            this.lGolHrac.Size = new System.Drawing.Size(496, 25);
+            this.lGolHrac.Size = new System.Drawing.Size(496, 38);
             this.lGolHrac.TabIndex = 40;
             this.lGolHrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -140,7 +142,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(784, 411);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lGolHrac);
             this.Controls.Add(this.lScoreDomaci);
             this.Controls.Add(this.lScoreHOSTIA);

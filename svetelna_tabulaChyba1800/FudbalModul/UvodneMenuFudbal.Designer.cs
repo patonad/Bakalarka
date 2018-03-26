@@ -126,6 +126,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "UvodneMenuFudbal";
             this.Text = "Úvodné menu";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UvodneMenuFudbal_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -74,7 +74,7 @@ namespace FudbalModul
         {
             predlzenieCas = cas;
             lPolcasFudbal.Text = "P";
-            riadiaceOkno.f("" + polcas);
+            riadiaceOkno.nastavPolcas("" + polcas);
         }
         private void tik(object sender, ElapsedEventArgs e)
         {
@@ -121,6 +121,12 @@ namespace FudbalModul
 
             }));
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void startCasovac()
         {
             timer.Start();

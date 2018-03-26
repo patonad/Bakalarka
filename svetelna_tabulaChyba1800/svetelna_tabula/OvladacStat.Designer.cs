@@ -51,22 +51,24 @@
             // 
             // bTop10Hostia
             // 
+            this.bTop10Hostia.BackColor = System.Drawing.Color.LightBlue;
             this.bTop10Hostia.Location = new System.Drawing.Point(203, 41);
             this.bTop10Hostia.Name = "bTop10Hostia";
             this.bTop10Hostia.Size = new System.Drawing.Size(71, 23);
             this.bTop10Hostia.TabIndex = 1;
             this.bTop10Hostia.Text = "button1";
-            this.bTop10Hostia.UseVisualStyleBackColor = true;
+            this.bTop10Hostia.UseVisualStyleBackColor = false;
             this.bTop10Hostia.Click += new System.EventHandler(this.bTop10Hostia_Click);
             // 
             // bTop10Domaci
             // 
+            this.bTop10Domaci.BackColor = System.Drawing.Color.LightBlue;
             this.bTop10Domaci.Location = new System.Drawing.Point(203, 85);
             this.bTop10Domaci.Name = "bTop10Domaci";
             this.bTop10Domaci.Size = new System.Drawing.Size(71, 23);
             this.bTop10Domaci.TabIndex = 3;
             this.bTop10Domaci.Text = "button1";
-            this.bTop10Domaci.UseVisualStyleBackColor = true;
+            this.bTop10Domaci.UseVisualStyleBackColor = false;
             this.bTop10Domaci.Click += new System.EventHandler(this.bTop10Domaci_Click);
             // 
             // label2
@@ -82,12 +84,13 @@
             // 
             // vTop10Celkovo
             // 
+            this.vTop10Celkovo.BackColor = System.Drawing.Color.LightBlue;
             this.vTop10Celkovo.Location = new System.Drawing.Point(203, 134);
             this.vTop10Celkovo.Name = "vTop10Celkovo";
             this.vTop10Celkovo.Size = new System.Drawing.Size(71, 23);
             this.vTop10Celkovo.TabIndex = 4;
             this.vTop10Celkovo.Text = "Zobraz";
-            this.vTop10Celkovo.UseVisualStyleBackColor = true;
+            this.vTop10Celkovo.UseVisualStyleBackColor = false;
             this.vTop10Celkovo.Click += new System.EventHandler(this.vTop10Celkovo_Click);
             // 
             // label3
@@ -103,12 +106,13 @@
             // 
             // bOdhohrateZapasy
             // 
+            this.bOdhohrateZapasy.BackColor = System.Drawing.Color.LightBlue;
             this.bOdhohrateZapasy.Location = new System.Drawing.Point(203, 179);
             this.bOdhohrateZapasy.Name = "bOdhohrateZapasy";
             this.bOdhohrateZapasy.Size = new System.Drawing.Size(71, 23);
             this.bOdhohrateZapasy.TabIndex = 6;
             this.bOdhohrateZapasy.Text = "Zobraz";
-            this.bOdhohrateZapasy.UseVisualStyleBackColor = true;
+            this.bOdhohrateZapasy.UseVisualStyleBackColor = false;
             this.bOdhohrateZapasy.Click += new System.EventHandler(this.bOdhohrateZapasy_Click);
             // 
             // label4
@@ -139,7 +143,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "OvladacStat";
-            this.Text = "OvladacStat";
+            this.Text = "Štatistika";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OvladacStat_FormClosing);
             this.Load += new System.EventHandler(this.OvladacStat_Load);
             this.ResumeLayout(false);

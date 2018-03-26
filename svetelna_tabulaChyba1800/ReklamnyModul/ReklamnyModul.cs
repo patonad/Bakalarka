@@ -12,7 +12,7 @@ namespace ReklamnyModul
         public void Prezentuj()
         {
             Ovladac z = new Ovladac();
-            z.Show();
+            z.ShowDialog();
         }
     }
 }

@@ -36,7 +36,7 @@
             // 
             // StartVideo
             // 
-            this.StartVideo.BackColor = System.Drawing.Color.SkyBlue;
+            this.StartVideo.BackColor = System.Drawing.Color.LightBlue;
             this.StartVideo.Location = new System.Drawing.Point(12, 262);
             this.StartVideo.Name = "StartVideo";
             this.StartVideo.Size = new System.Drawing.Size(75, 23);
@@ -47,7 +47,7 @@
             // 
             // StopVideo
             // 
-            this.StopVideo.BackColor = System.Drawing.Color.SkyBlue;
+            this.StopVideo.BackColor = System.Drawing.Color.LightBlue;
             this.StopVideo.Location = new System.Drawing.Point(197, 262);
             this.StopVideo.Name = "StopVideo";
             this.StopVideo.Size = new System.Drawing.Size(75, 23);
@@ -66,7 +66,7 @@
             // 
             // pauseVideo
             // 
-            this.pauseVideo.BackColor = System.Drawing.Color.SkyBlue;
+            this.pauseVideo.BackColor = System.Drawing.Color.LightBlue;
             this.pauseVideo.Location = new System.Drawing.Point(103, 262);
             this.pauseVideo.Name = "pauseVideo";
             this.pauseVideo.Size = new System.Drawing.Size(75, 23);
@@ -87,7 +87,7 @@
             this.Controls.Add(this.StartVideo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Ovladac";
-            this.Text = "Ovladac";
+            this.Text = "Reklama";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ovladac_FormClosing);
             this.Load += new System.EventHandler(this.Ovladac_Load);
             this.ResumeLayout(false);

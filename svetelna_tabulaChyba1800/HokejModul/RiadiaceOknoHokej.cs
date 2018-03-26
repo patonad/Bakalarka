@@ -216,6 +216,7 @@ namespace HokejModul
             if (!tabula.ideCas())
             {
                 OvladacStat s = new OvladacStat(idTymHostia,iDTymDomaci,hostia,domaci,dat,"Hokej");
+                
                 s.Show();
             }
             else

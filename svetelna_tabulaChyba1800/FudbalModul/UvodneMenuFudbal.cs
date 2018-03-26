@@ -75,5 +75,9 @@ namespace FudbalModul
             this.Close();
         }
 
-       }
+        private void UvodneMenuFudbal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            dat.odpoj();
+        }
+    }
 }

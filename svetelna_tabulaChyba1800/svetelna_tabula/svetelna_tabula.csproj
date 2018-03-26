@@ -57,6 +57,12 @@
     <Compile Include="OvladacStat.Designer.cs">
       <DependentUpon>OvladacStat.cs</DependentUpon>
     </Compile>
+    <Compile Include="PridajHraca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PridajHraca.Designer.cs">
+      <DependentUpon>PridajHraca.cs</DependentUpon>
+    </Compile>
     <Compile Include="SpracovavacModulov.cs" />
     <Compile Include="Uvod.cs">
       <SubType>Form</SubType>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="OvladacStat.resx">
       <DependentUpon>OvladacStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PridajHraca.resx">
+      <DependentUpon>PridajHraca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

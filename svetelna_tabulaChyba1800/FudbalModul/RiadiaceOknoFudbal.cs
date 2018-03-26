@@ -164,7 +164,7 @@ namespace FudbalModul
             if (!tabula.ideCas())
             {
                 OvladacStat s = new OvladacStat(idTymHostia,iDTymDomaci, hostia, domaci, dat,"Fudbal");
-                s.Show();
+                s.ShowDialog();
             }
             else
             {

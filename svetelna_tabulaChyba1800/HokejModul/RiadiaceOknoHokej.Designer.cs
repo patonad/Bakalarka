@@ -364,7 +364,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "RiadiaceOknoHokej";
-            this.Text = "RiadiaceOknoHokej";
+            this.Text = "Riadiace okno";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RiadiaceOknoHokej_FormClosing);
             this.Load += new System.EventHandler(this.RiadiaceOknoHokej_Load);
             this.ResumeLayout(false);

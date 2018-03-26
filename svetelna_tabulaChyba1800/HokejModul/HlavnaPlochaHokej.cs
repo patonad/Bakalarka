@@ -242,6 +242,7 @@ namespace HokejModul
         {
             return casIde;
         }
+
         public void realnyCas()
         {
             realCasTimer.Start();
