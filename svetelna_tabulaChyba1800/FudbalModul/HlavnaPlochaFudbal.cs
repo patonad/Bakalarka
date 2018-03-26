@@ -74,7 +74,7 @@ namespace FudbalModul
         {
             predlzenieCas = cas;
             lPolcasFudbal.Text = "P";
-            riadiaceOkno.nastavPolcas("" + polcas);
+            riadiaceOkno.f("" + polcas);
         }
         private void tik(object sender, ElapsedEventArgs e)
         {

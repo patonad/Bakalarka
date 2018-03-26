@@ -34,13 +34,14 @@
             this.tBDomaci = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.bVytvorTym = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lExitFudbal
             // 
             this.lExitFudbal.BackColor = System.Drawing.Color.LightBlue;
             this.lExitFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lExitFudbal.Location = new System.Drawing.Point(43, 228);
+            this.lExitFudbal.Location = new System.Drawing.Point(43, 293);
             this.lExitFudbal.Name = "lExitFudbal";
             this.lExitFudbal.Size = new System.Drawing.Size(216, 47);
             this.lExitFudbal.TabIndex = 17;
@@ -52,7 +53,7 @@
             // 
             this.lStartFudbal.BackColor = System.Drawing.Color.LightBlue;
             this.lStartFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lStartFudbal.Location = new System.Drawing.Point(43, 105);
+            this.lStartFudbal.Location = new System.Drawing.Point(43, 117);
             this.lStartFudbal.Name = "lStartFudbal";
             this.lStartFudbal.Size = new System.Drawing.Size(216, 97);
             this.lStartFudbal.TabIndex = 16;
@@ -62,7 +63,7 @@
             // 
             // tBHostia
             // 
-            this.tBHostia.BackColor = System.Drawing.Color.LightBlue;
+            this.tBHostia.BackColor = System.Drawing.Color.LightCyan;
             this.tBHostia.Location = new System.Drawing.Point(159, 66);
             this.tBHostia.Name = "tBHostia";
             this.tBHostia.Size = new System.Drawing.Size(100, 20);
@@ -70,7 +71,7 @@
             // 
             // tBDomaci
             // 
-            this.tBDomaci.BackColor = System.Drawing.Color.LightBlue;
+            this.tBDomaci.BackColor = System.Drawing.Color.LightCyan;
             this.tBDomaci.Location = new System.Drawing.Point(159, 36);
             this.tBDomaci.Name = "tBDomaci";
             this.tBDomaci.Size = new System.Drawing.Size(100, 20);
@@ -98,12 +99,24 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Tým domácich:";
             // 
+            // bVytvorTym
+            // 
+            this.bVytvorTym.BackColor = System.Drawing.Color.LightBlue;
+            this.bVytvorTym.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.bVytvorTym.Location = new System.Drawing.Point(43, 231);
+            this.bVytvorTym.Name = "bVytvorTym";
+            this.bVytvorTym.Size = new System.Drawing.Size(216, 47);
+            this.bVytvorTym.TabIndex = 18;
+            this.bVytvorTym.Text = "Pridať tým";
+            this.bVytvorTym.UseVisualStyleBackColor = false;
+            // 
             // UvodneMenuFudbal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(307, 318);
+            this.ClientSize = new System.Drawing.Size(307, 352);
+            this.Controls.Add(this.bVytvorTym);
             this.Controls.Add(this.lExitFudbal);
             this.Controls.Add(this.lStartFudbal);
             this.Controls.Add(this.tBHostia);
@@ -112,7 +125,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "UvodneMenuFudbal";
-            this.Text = "UvodneMenuFudbal";
+            this.Text = "Úvodné menu";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,5 +139,6 @@
         private System.Windows.Forms.TextBox tBDomaci;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bVytvorTym;
     }
 }

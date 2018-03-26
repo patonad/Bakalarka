@@ -34,13 +34,14 @@
             this.tBDomaci = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.bVytvorTym = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lExitHokej
             // 
-            this.lExitHokej.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lExitHokej.BackColor = System.Drawing.Color.LightBlue;
             this.lExitHokej.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lExitHokej.Location = new System.Drawing.Point(43, 226);
+            this.lExitHokej.Location = new System.Drawing.Point(43, 294);
             this.lExitHokej.Name = "lExitHokej";
             this.lExitHokej.Size = new System.Drawing.Size(216, 46);
             this.lExitHokej.TabIndex = 11;
@@ -52,7 +53,7 @@
             // 
             this.lStartHokej.BackColor = System.Drawing.Color.LightBlue;
             this.lStartHokej.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lStartHokej.Location = new System.Drawing.Point(43, 98);
+            this.lStartHokej.Location = new System.Drawing.Point(43, 122);
             this.lStartHokej.Name = "lStartHokej";
             this.lStartHokej.Size = new System.Drawing.Size(216, 96);
             this.lStartHokej.TabIndex = 10;
@@ -62,7 +63,7 @@
             // 
             // tBHostia
             // 
-            this.tBHostia.BackColor = System.Drawing.Color.LightBlue;
+            this.tBHostia.BackColor = System.Drawing.Color.LightCyan;
             this.tBHostia.Location = new System.Drawing.Point(159, 64);
             this.tBHostia.Name = "tBHostia";
             this.tBHostia.Size = new System.Drawing.Size(100, 20);
@@ -70,7 +71,7 @@
             // 
             // tBDomaci
             // 
-            this.tBDomaci.BackColor = System.Drawing.Color.LightBlue;
+            this.tBDomaci.BackColor = System.Drawing.Color.LightCyan;
             this.tBDomaci.Location = new System.Drawing.Point(159, 34);
             this.tBDomaci.Name = "tBDomaci";
             this.tBDomaci.Size = new System.Drawing.Size(100, 20);
@@ -91,19 +92,31 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Location = new System.Drawing.Point(40, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "Tým domácich:";
             // 
+            // bVytvorTym
+            // 
+            this.bVytvorTym.BackColor = System.Drawing.Color.LightBlue;
+            this.bVytvorTym.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.bVytvorTym.Location = new System.Drawing.Point(43, 233);
+            this.bVytvorTym.Name = "bVytvorTym";
+            this.bVytvorTym.Size = new System.Drawing.Size(216, 46);
+            this.bVytvorTym.TabIndex = 12;
+            this.bVytvorTym.Text = "Pridať tým";
+            this.bVytvorTym.UseVisualStyleBackColor = false;
+            // 
             // UvodneMenuHokej
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(307, 318);
+            this.ClientSize = new System.Drawing.Size(307, 352);
+            this.Controls.Add(this.bVytvorTym);
             this.Controls.Add(this.lExitHokej);
             this.Controls.Add(this.lStartHokej);
             this.Controls.Add(this.tBHostia);
@@ -113,7 +126,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "UvodneMenuHokej";
-            this.Text = "UvodneMenuHokej";
+            this.Text = "Úvodné menu";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,5 +140,6 @@
         private System.Windows.Forms.TextBox tBDomaci;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bVytvorTym;
     }
 }

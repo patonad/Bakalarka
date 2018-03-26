@@ -59,22 +59,22 @@
             // bGolDomaci
             // 
             this.bGolDomaci.BackColor = System.Drawing.Color.LightBlue;
-            this.bGolDomaci.Location = new System.Drawing.Point(195, 171);
+            this.bGolDomaci.Location = new System.Drawing.Point(194, 148);
             this.bGolDomaci.Name = "bGolDomaci";
             this.bGolDomaci.Size = new System.Drawing.Size(75, 23);
             this.bGolDomaci.TabIndex = 39;
-            this.bGolDomaci.Text = "button2";
+            this.bGolDomaci.Text = "domáci";
             this.bGolDomaci.UseVisualStyleBackColor = false;
             this.bGolDomaci.Click += new System.EventHandler(this.bGolDomaci_Click);
             // 
             // bGolHostia
             // 
             this.bGolHostia.BackColor = System.Drawing.Color.LightBlue;
-            this.bGolHostia.Location = new System.Drawing.Point(85, 171);
+            this.bGolHostia.Location = new System.Drawing.Point(95, 148);
             this.bGolHostia.Name = "bGolHostia";
             this.bGolHostia.Size = new System.Drawing.Size(75, 23);
             this.bGolHostia.TabIndex = 38;
-            this.bGolHostia.Text = "button1";
+            this.bGolHostia.Text = "hostia";
             this.bGolHostia.UseVisualStyleBackColor = false;
             this.bGolHostia.Click += new System.EventHandler(this.bGolHostia_Click);
             // 
@@ -83,7 +83,7 @@
             this.bKoniecRiadOknoHokej.BackColor = System.Drawing.Color.LightBlue;
             this.bKoniecRiadOknoHokej.CausesValidation = false;
             this.bKoniecRiadOknoHokej.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.bKoniecRiadOknoHokej.Location = new System.Drawing.Point(75, 454);
+            this.bKoniecRiadOknoHokej.Location = new System.Drawing.Point(85, 409);
             this.bKoniecRiadOknoHokej.Name = "bKoniecRiadOknoHokej";
             this.bKoniecRiadOknoHokej.Size = new System.Drawing.Size(195, 51);
             this.bKoniecRiadOknoHokej.TabIndex = 37;
@@ -96,7 +96,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(82, 208);
+            this.label6.Location = new System.Drawing.Point(92, 183);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 16);
             this.label6.TabIndex = 36;
@@ -104,8 +104,8 @@
             // 
             // tBHracGol
             // 
-            this.tBHracGol.BackColor = System.Drawing.Color.LightBlue;
-            this.tBHracGol.Location = new System.Drawing.Point(195, 204);
+            this.tBHracGol.BackColor = System.Drawing.Color.LightCyan;
+            this.tBHracGol.Location = new System.Drawing.Point(194, 183);
             this.tBHracGol.Name = "tBHracGol";
             this.tBHracGol.Size = new System.Drawing.Size(75, 20);
             this.tBHracGol.TabIndex = 35;
@@ -113,7 +113,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(183, 381);
+            this.label5.Location = new System.Drawing.Point(197, 376);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 13);
             this.label5.TabIndex = 33;
@@ -123,7 +123,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(82, 134);
+            this.label3.Location = new System.Drawing.Point(91, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 16);
             this.label3.TabIndex = 32;
@@ -134,7 +134,7 @@
             this.lCasRiadOknoHokej.AutoSize = true;
             this.lCasRiadOknoHokej.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.lCasRiadOknoHokej.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lCasRiadOknoHokej.Location = new System.Drawing.Point(163, 61);
+            this.lCasRiadOknoHokej.Location = new System.Drawing.Point(169, 61);
             this.lCasRiadOknoHokej.Name = "lCasRiadOknoHokej";
             this.lCasRiadOknoHokej.Size = new System.Drawing.Size(44, 16);
             this.lCasRiadOknoHokej.TabIndex = 31;
@@ -145,7 +145,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(46, 63);
+            this.label2.Location = new System.Drawing.Point(52, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 16);
             this.label2.TabIndex = 30;
@@ -156,7 +156,7 @@
             this.lTretinaRiadOknoHokej.AutoSize = true;
             this.lTretinaRiadOknoHokej.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.lTretinaRiadOknoHokej.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lTretinaRiadOknoHokej.Location = new System.Drawing.Point(177, 34);
+            this.lTretinaRiadOknoHokej.Location = new System.Drawing.Point(183, 34);
             this.lTretinaRiadOknoHokej.Name = "lTretinaRiadOknoHokej";
             this.lTretinaRiadOknoHokej.Size = new System.Drawing.Size(16, 16);
             this.lTretinaRiadOknoHokej.TabIndex = 29;
@@ -167,11 +167,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(46, 34);
+            this.label1.Location = new System.Drawing.Point(52, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 16);
             this.label1.TabIndex = 28;
-            this.label1.Text = "Aktualna Tretina:";
+            this.label1.Text = "Aktuálna Tretina:";
             // 
             // bStopHokej
             // 
@@ -209,7 +209,7 @@
             // tretina
             // 
             this.tretina.AutoSize = true;
-            this.tretina.Location = new System.Drawing.Point(228, 287);
+            this.tretina.Location = new System.Drawing.Point(242, 282);
             this.tretina.Name = "tretina";
             this.tretina.Size = new System.Drawing.Size(0, 13);
             this.tretina.TabIndex = 27;
@@ -219,7 +219,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(82, 284);
+            this.label4.Location = new System.Drawing.Point(91, 252);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 16);
             this.label4.TabIndex = 34;
@@ -228,29 +228,29 @@
             // bFaulHostia
             // 
             this.bFaulHostia.BackColor = System.Drawing.Color.LightBlue;
-            this.bFaulHostia.Location = new System.Drawing.Point(81, 316);
+            this.bFaulHostia.Location = new System.Drawing.Point(94, 277);
             this.bFaulHostia.Name = "bFaulHostia";
             this.bFaulHostia.Size = new System.Drawing.Size(75, 23);
             this.bFaulHostia.TabIndex = 40;
-            this.bFaulHostia.Text = "button1";
+            this.bFaulHostia.Text = "hostia";
             this.bFaulHostia.UseVisualStyleBackColor = false;
             this.bFaulHostia.Click += new System.EventHandler(this.bFaulHostia_Click);
             // 
             // bFaulDomaci
             // 
             this.bFaulDomaci.BackColor = System.Drawing.Color.LightBlue;
-            this.bFaulDomaci.Location = new System.Drawing.Point(195, 316);
+            this.bFaulDomaci.Location = new System.Drawing.Point(194, 277);
             this.bFaulDomaci.Name = "bFaulDomaci";
             this.bFaulDomaci.Size = new System.Drawing.Size(75, 23);
             this.bFaulDomaci.TabIndex = 41;
-            this.bFaulDomaci.Text = "button2";
+            this.bFaulDomaci.Text = "domáci";
             this.bFaulDomaci.UseVisualStyleBackColor = false;
             this.bFaulDomaci.Click += new System.EventHandler(this.bFaulDomaci_Click);
             // 
             // tBHracFaul
             // 
-            this.tBHracFaul.BackColor = System.Drawing.Color.LightBlue;
-            this.tBHracFaul.Location = new System.Drawing.Point(195, 347);
+            this.tBHracFaul.BackColor = System.Drawing.Color.LightCyan;
+            this.tBHracFaul.Location = new System.Drawing.Point(194, 312);
             this.tBHracFaul.Name = "tBHracFaul";
             this.tBHracFaul.Size = new System.Drawing.Size(75, 20);
             this.tBHracFaul.TabIndex = 42;
@@ -260,7 +260,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(82, 348);
+            this.label7.Location = new System.Drawing.Point(91, 312);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 16);
             this.label7.TabIndex = 43;
@@ -269,7 +269,7 @@
             // predlzenie
             // 
             this.predlzenie.BackColor = System.Drawing.Color.LightBlue;
-            this.predlzenie.Location = new System.Drawing.Point(81, 405);
+            this.predlzenie.Location = new System.Drawing.Point(94, 357);
             this.predlzenie.Name = "predlzenie";
             this.predlzenie.Size = new System.Drawing.Size(75, 23);
             this.predlzenie.TabIndex = 45;
@@ -280,8 +280,8 @@
             // 
             // tBPredlzenie
             // 
-            this.tBPredlzenie.BackColor = System.Drawing.Color.LightBlue;
-            this.tBPredlzenie.Location = new System.Drawing.Point(195, 408);
+            this.tBPredlzenie.BackColor = System.Drawing.Color.LightCyan;
+            this.tBPredlzenie.Location = new System.Drawing.Point(194, 360);
             this.tBPredlzenie.Name = "tBPredlzenie";
             this.tBPredlzenie.Size = new System.Drawing.Size(75, 20);
             this.tBPredlzenie.TabIndex = 46;
@@ -290,7 +290,7 @@
             // reklama
             // 
             this.reklama.BackColor = System.Drawing.Color.LightBlue;
-            this.reklama.Location = new System.Drawing.Point(49, 88);
+            this.reklama.Location = new System.Drawing.Point(55, 88);
             this.reklama.Name = "reklama";
             this.reklama.Size = new System.Drawing.Size(75, 23);
             this.reklama.TabIndex = 47;
@@ -302,11 +302,11 @@
             // bStat
             // 
             this.bStat.BackColor = System.Drawing.Color.LightBlue;
-            this.bStat.Location = new System.Drawing.Point(130, 88);
+            this.bStat.Location = new System.Drawing.Point(138, 88);
             this.bStat.Name = "bStat";
             this.bStat.Size = new System.Drawing.Size(75, 23);
             this.bStat.TabIndex = 48;
-            this.bStat.Text = "Statistiky";
+            this.bStat.Text = "Štatistiky";
             this.bStat.UseVisualStyleBackColor = false;
             this.bStat.Click += new System.EventHandler(this.bStat_Click);
             // 
@@ -315,7 +315,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(82, 234);
+            this.label8.Location = new System.Drawing.Point(92, 209);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 16);
             this.label8.TabIndex = 49;
@@ -323,8 +323,8 @@
             // 
             // tBAsistencia
             // 
-            this.tBAsistencia.BackColor = System.Drawing.Color.LightBlue;
-            this.tBAsistencia.Location = new System.Drawing.Point(195, 234);
+            this.tBAsistencia.BackColor = System.Drawing.Color.LightCyan;
+            this.tBAsistencia.Location = new System.Drawing.Point(194, 209);
             this.tBAsistencia.Name = "tBAsistencia";
             this.tBAsistencia.Size = new System.Drawing.Size(75, 20);
             this.tBAsistencia.TabIndex = 50;
@@ -334,7 +334,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(360, 588);
+            this.ClientSize = new System.Drawing.Size(360, 493);
             this.Controls.Add(this.tBAsistencia);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.bStat);

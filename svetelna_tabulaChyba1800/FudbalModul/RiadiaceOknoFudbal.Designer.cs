@@ -55,7 +55,7 @@
             this.bRealCasRiadOknoFudbal.BackColor = System.Drawing.Color.LightBlue;
             this.bRealCasRiadOknoFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bRealCasRiadOknoFudbal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bRealCasRiadOknoFudbal.Location = new System.Drawing.Point(236, 96);
+            this.bRealCasRiadOknoFudbal.Location = new System.Drawing.Point(227, 96);
             this.bRealCasRiadOknoFudbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.bRealCasRiadOknoFudbal.Name = "bRealCasRiadOknoFudbal";
             this.bRealCasRiadOknoFudbal.Size = new System.Drawing.Size(74, 23);
@@ -69,12 +69,12 @@
             this.bGolDomaci.BackColor = System.Drawing.Color.LightBlue;
             this.bGolDomaci.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bGolDomaci.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bGolDomaci.Location = new System.Drawing.Point(193, 168);
+            this.bGolDomaci.Location = new System.Drawing.Point(186, 156);
             this.bGolDomaci.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.bGolDomaci.Name = "bGolDomaci";
             this.bGolDomaci.Size = new System.Drawing.Size(74, 23);
             this.bGolDomaci.TabIndex = 59;
-            this.bGolDomaci.Text = "button2";
+            this.bGolDomaci.Text = "domáci";
             this.bGolDomaci.UseVisualStyleBackColor = false;
             this.bGolDomaci.Click += new System.EventHandler(this.bGolDomaci_Click);
             // 
@@ -83,12 +83,12 @@
             this.bGolHostia.BackColor = System.Drawing.Color.LightBlue;
             this.bGolHostia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bGolHostia.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bGolHostia.Location = new System.Drawing.Point(86, 168);
+            this.bGolHostia.Location = new System.Drawing.Point(91, 156);
             this.bGolHostia.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.bGolHostia.Name = "bGolHostia";
             this.bGolHostia.Size = new System.Drawing.Size(74, 23);
             this.bGolHostia.TabIndex = 58;
-            this.bGolHostia.Text = "button1";
+            this.bGolHostia.Text = "hostia";
             this.bGolHostia.UseVisualStyleBackColor = false;
             this.bGolHostia.Click += new System.EventHandler(this.bGolHostia_Click);
             // 
@@ -98,7 +98,7 @@
             this.bKoniecRiadOknoFudbal.CausesValidation = false;
             this.bKoniecRiadOknoFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.bKoniecRiadOknoFudbal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bKoniecRiadOknoFudbal.Location = new System.Drawing.Point(74, 351);
+            this.bKoniecRiadOknoFudbal.Location = new System.Drawing.Point(79, 313);
             this.bKoniecRiadOknoFudbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.bKoniecRiadOknoFudbal.Name = "bKoniecRiadOknoFudbal";
             this.bKoniecRiadOknoFudbal.Size = new System.Drawing.Size(194, 51);
@@ -112,7 +112,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(82, 201);
+            this.label6.Location = new System.Drawing.Point(87, 186);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 16);
@@ -121,8 +121,8 @@
             // 
             // tBHracGol
             // 
-            this.tBHracGol.BackColor = System.Drawing.Color.LightBlue;
-            this.tBHracGol.Location = new System.Drawing.Point(193, 201);
+            this.tBHracGol.BackColor = System.Drawing.Color.LightCyan;
+            this.tBHracGol.Location = new System.Drawing.Point(185, 186);
             this.tBHracGol.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tBHracGol.Name = "tBHracGol";
             this.tBHracGol.Size = new System.Drawing.Size(75, 20);
@@ -142,7 +142,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(83, 130);
+            this.label3.Location = new System.Drawing.Point(88, 137);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 16);
@@ -195,14 +195,14 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 16);
             this.label1.TabIndex = 48;
-            this.label1.Text = "Aktualny polčas:";
+            this.label1.Text = "Aktuálny polčas:";
             // 
             // bStopFudbal
             // 
             this.bStopFudbal.BackColor = System.Drawing.Color.LightBlue;
             this.bStopFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bStopFudbal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bStopFudbal.Location = new System.Drawing.Point(236, 66);
+            this.bStopFudbal.Location = new System.Drawing.Point(227, 67);
             this.bStopFudbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.bStopFudbal.Name = "bStopFudbal";
             this.bStopFudbal.Size = new System.Drawing.Size(74, 23);
@@ -216,7 +216,7 @@
             this.bStartFudbal.BackColor = System.Drawing.Color.LightBlue;
             this.bStartFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bStartFudbal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bStartFudbal.Location = new System.Drawing.Point(236, 36);
+            this.bStartFudbal.Location = new System.Drawing.Point(227, 37);
             this.bStartFudbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.bStartFudbal.Name = "bStartFudbal";
             this.bStartFudbal.Size = new System.Drawing.Size(74, 23);
@@ -227,8 +227,8 @@
             // 
             // tBPredlzenie
             // 
-            this.tBPredlzenie.BackColor = System.Drawing.Color.LightBlue;
-            this.tBPredlzenie.Location = new System.Drawing.Point(188, 272);
+            this.tBPredlzenie.BackColor = System.Drawing.Color.LightCyan;
+            this.tBPredlzenie.Location = new System.Drawing.Point(185, 260);
             this.tBPredlzenie.Name = "tBPredlzenie";
             this.tBPredlzenie.Size = new System.Drawing.Size(75, 20);
             this.tBPredlzenie.TabIndex = 66;
@@ -238,7 +238,7 @@
             // 
             this.predlzenie.BackColor = System.Drawing.Color.LightBlue;
             this.predlzenie.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.predlzenie.Location = new System.Drawing.Point(85, 269);
+            this.predlzenie.Location = new System.Drawing.Point(90, 258);
             this.predlzenie.Name = "predlzenie";
             this.predlzenie.Size = new System.Drawing.Size(75, 23);
             this.predlzenie.TabIndex = 65;
@@ -261,8 +261,8 @@
             // 
             // tBAsistencia
             // 
-            this.tBAsistencia.BackColor = System.Drawing.Color.LightBlue;
-            this.tBAsistencia.Location = new System.Drawing.Point(193, 227);
+            this.tBAsistencia.BackColor = System.Drawing.Color.LightCyan;
+            this.tBAsistencia.Location = new System.Drawing.Point(185, 212);
             this.tBAsistencia.Name = "tBAsistencia";
             this.tBAsistencia.Size = new System.Drawing.Size(75, 20);
             this.tBAsistencia.TabIndex = 69;
@@ -272,7 +272,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(80, 227);
+            this.label8.Location = new System.Drawing.Point(87, 212);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 16);
             this.label8.TabIndex = 68;
@@ -281,11 +281,11 @@
             // bStat
             // 
             this.bStat.BackColor = System.Drawing.Color.LightBlue;
-            this.bStat.Location = new System.Drawing.Point(133, 96);
+            this.bStat.Location = new System.Drawing.Point(138, 96);
             this.bStat.Name = "bStat";
             this.bStat.Size = new System.Drawing.Size(75, 23);
             this.bStat.TabIndex = 70;
-            this.bStat.Text = "Statistiky";
+            this.bStat.Text = "Štatistiky";
             this.bStat.UseVisualStyleBackColor = false;
             this.bStat.Click += new System.EventHandler(this.bStat_Click);
             // 
@@ -294,7 +294,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(360, 452);
+            this.ClientSize = new System.Drawing.Size(360, 393);
             this.Controls.Add(this.bStat);
             this.Controls.Add(this.tBAsistencia);
             this.Controls.Add(this.label8);
