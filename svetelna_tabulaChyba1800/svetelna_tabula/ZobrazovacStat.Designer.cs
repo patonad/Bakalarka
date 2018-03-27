@@ -53,6 +53,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ZobrazovacStat";
             this.Text = "ZobrazovacStat";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.ZobrazovacStat_Load);
             this.ResumeLayout(false);
 
