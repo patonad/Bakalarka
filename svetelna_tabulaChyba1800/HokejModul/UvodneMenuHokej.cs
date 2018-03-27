@@ -75,7 +75,7 @@ namespace HokejModul
         /// <param name="e"></param>
         private void lExitHokej_Click(object sender, EventArgs e)
         {
-            dat.odpoj();
+           
             this.Close();
 
         }

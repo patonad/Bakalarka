@@ -34,14 +34,13 @@
             this.tBDomaci = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.bVytvorTym = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lExitFudbal
             // 
             this.lExitFudbal.BackColor = System.Drawing.Color.LightBlue;
             this.lExitFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.lExitFudbal.Location = new System.Drawing.Point(43, 293);
+            this.lExitFudbal.Location = new System.Drawing.Point(43, 238);
             this.lExitFudbal.Name = "lExitFudbal";
             this.lExitFudbal.Size = new System.Drawing.Size(216, 47);
             this.lExitFudbal.TabIndex = 17;
@@ -99,24 +98,12 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Tým domácich:";
             // 
-            // bVytvorTym
-            // 
-            this.bVytvorTym.BackColor = System.Drawing.Color.LightBlue;
-            this.bVytvorTym.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.bVytvorTym.Location = new System.Drawing.Point(43, 231);
-            this.bVytvorTym.Name = "bVytvorTym";
-            this.bVytvorTym.Size = new System.Drawing.Size(216, 47);
-            this.bVytvorTym.TabIndex = 18;
-            this.bVytvorTym.Text = "Pridať tým";
-            this.bVytvorTym.UseVisualStyleBackColor = false;
-            // 
             // UvodneMenuFudbal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(307, 352);
-            this.Controls.Add(this.bVytvorTym);
+            this.ClientSize = new System.Drawing.Size(307, 306);
             this.Controls.Add(this.lExitFudbal);
             this.Controls.Add(this.lStartFudbal);
             this.Controls.Add(this.tBHostia);
@@ -140,6 +127,5 @@
         private System.Windows.Forms.TextBox tBDomaci;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button bVytvorTym;
     }
 }
