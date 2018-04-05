@@ -145,9 +145,9 @@
             this.label3.Location = new System.Drawing.Point(88, 137);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 16);
+            this.label3.Size = new System.Drawing.Size(90, 16);
             this.label3.TabIndex = 52;
-            this.label3.Text = "Gól dal tým: ";
+            this.label3.Text = "Gól dal tím: ";
             // 
             // lCasRiadOknoFudbal
             // 

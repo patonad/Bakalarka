@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using Oracle.ManagedDataAccess.Client;
 using System.Windows.Forms;
 using System.IO;
@@ -18,7 +19,7 @@ namespace svetelna_tabula
 
         }
        
-        public int zistiCiJaTym(string meno, string sport)
+        public int zistiCiJaTim(string meno, string sport)
         {
 
             OracleCommand c = new OracleCommand("select * from tym where nazov = '" + meno + "' and sport =  '" + sport + "'", con);
@@ -34,10 +35,10 @@ namespace svetelna_tabula
 
 
         }
-        public string zistiCiJeHrac(int id_tym, int cislo)
+        public string zistiCiJeHrac(int id_tim, int cislo)
         {
 
-            OracleCommand c = new OracleCommand("select * from hraci where id_tym = '" + id_tym + "' and Cislo =  '" + cislo + "'", con);
+            OracleCommand c = new OracleCommand("select * from hraci where id_tym = '" + id_tim + "' and Cislo =  '" + cislo + "'", con);
             OracleDataReader reader = c.ExecuteReader();
             if (reader.Read())
             {
@@ -50,24 +51,24 @@ namespace svetelna_tabula
 
 
         }
-        public List<List<string>> nacitajOdohrateZapasy(int id_tymHostia, int id_tymDomaci)
+        public List<List<string>> nacitajOdohrateZapasy(int id_timHostia, int id_timDomaci)
         {
             OracleCommand c = new OracleCommand("select zapas.ID_ZAPAS, zapas.GOLHOSTIA, zapas.GOLDOMACI,zapas.DATUM, dom.NAZOV as domaci, hos.NaZOV as hostia "+
             "from zapas join tym dom on (zapas.TYM_DOMACI = dom.ID_TYM) join tym hos on (zapas.TYM_HOSTIA = hos.ID_TYM)"+
-             "where TYM_DOMACI = '"+ id_tymHostia + "' or TYM_HOSTIA = '"+id_tymHostia+"' order by id_zapas desc FETCH FIRST 10 ROWS ONLY", con);
+             "where TYM_DOMACI = '"+ id_timHostia + "' or TYM_HOSTIA = '"+id_timHostia+"' order by id_zapas desc FETCH FIRST 10 ROWS ONLY", con);
             OracleDataReader reader1 = c.ExecuteReader();
             c = new OracleCommand("select zapas.ID_ZAPAS, zapas.GOLHOSTIA, zapas.GOLDOMACI,zapas.DATUM, dom.NAZOV as domaci, hos.NaZOV as hostia " +
             "from zapas join tym dom on (zapas.TYM_DOMACI = dom.ID_TYM) join tym hos on (zapas.TYM_HOSTIA = hos.ID_TYM)" +
-             "where TYM_DOMACI = '" + id_tymDomaci + "' or TYM_HOSTIA = '" + id_tymDomaci + "' order by id_zapas desc FETCH FIRST 10 ROWS ONLY", con);
+             "where TYM_DOMACI = '" + id_timDomaci + "' or TYM_HOSTIA = '" + id_timDomaci + "' order by id_zapas desc FETCH FIRST 10 ROWS ONLY", con);
             OracleDataReader reader2 = c.ExecuteReader();
             List<List<string>> zoznam = new List<List<string>>();
             List<string> list = new List<string>();
-            list.Add("Nazov týmu");
+            list.Add("Nazov tímu");
             list.Add("Skóre");
-            list.Add("Nazov týmu");
-            list.Add("Nazov týmu");
+            list.Add("Nazov tímu");
+            list.Add("Nazov tímu");
             list.Add("Skóre");
-            list.Add("Nazov týmu");
+            list.Add("Nazov tímu");
             zoznam.Add(list);
             while (reader1.Read() && reader2.Read())
             {
@@ -97,7 +98,7 @@ namespace svetelna_tabula
             list.Add("Počet gólov");
             list.Add("Počet asistencii");
             list.Add("Celkove skóre");
-            list.Add("Názov týmu");
+            list.Add("Názov tímu");
             zoznam.Add(list);
             while (reader.Read())
             {
@@ -115,10 +116,10 @@ namespace svetelna_tabula
 
 
         }
-        public List<List<string>> nacitajTop10(int id_tym)
+        public List<List<string>> nacitajTop10(int id_tim)
         {
             OracleCommand c = new OracleCommand("select  meno, CISLO,PRIEZVISKO,POCET_GOLOV,POCET_ASISTENCII,(POCET_ASISTENCII + POCET_GOLOV) as"+
-            " score from hraci WHERE ID_TYM = '"+id_tym+ "'order by score desc FETCH FIRST 10 ROWS ONLY", con);
+            " score from hraci WHERE ID_TYM = '"+id_tim+ "'order by score desc FETCH FIRST 10 ROWS ONLY", con);
             OracleDataReader reader = c.ExecuteReader();
             List<List<string>> zoznam = new List<List<string>>();
             List<string> list = new List<string>();
@@ -159,10 +160,10 @@ namespace svetelna_tabula
             c.ExecuteNonQuery();
             return index;
         }
-        public void pridajZaznam(int id_zapas, int idTymu, int cislo, string cas, string typ)
+        public void pridajZaznam(int id_zapas, int idTimu, int cislo, string cas, string typ)
         {
             OracleCommand c = new OracleCommand("INSERT INTO ZAZNAM (ID_ZAPAS, ID_TYM, CISLO, CAS, TYP_ZAZNAMU) VALUES ('" + id_zapas + 
-                "', '" + idTymu + "', '" + cislo + "', '" + cas + "', '" + typ + "')", con);
+                "', '" + idTimu + "', '" + cislo + "', '" + cas + "', '" + typ + "')", con);
             c.ExecuteNonQuery();
 
         }
@@ -173,9 +174,9 @@ namespace svetelna_tabula
             c = new OracleCommand("commit", con);
             c.ExecuteNonQuery();
         }
-        public void upravGol(int id_tym, int cislo)
+        public void upravGol(int id_tim, int cislo)
         {
-            OracleCommand c = new OracleCommand("select pocet_golov from hraci where id_tym = "+ id_tym+" and cislo = " + cislo, con);
+            OracleCommand c = new OracleCommand("select pocet_golov from hraci where id_tym = "+ id_tim+" and cislo = " + cislo, con);
             OracleDataReader reader = c.ExecuteReader();
             int pocet = 0;
             if (reader.Read())
@@ -183,14 +184,14 @@ namespace svetelna_tabula
                 pocet = reader.GetInt32(0);
             }
             pocet++;
-            c = new OracleCommand("UPDATE hraci SET pocet_golov = " + pocet + " where id_tym = " + id_tym + " and cislo = " + cislo, con);
+            c = new OracleCommand("UPDATE hraci SET pocet_golov = " + pocet + " where id_tym = " + id_tim + " and cislo = " + cislo, con);
             c.ExecuteNonQuery();
             c = new OracleCommand("commit", con);
             c.ExecuteNonQuery();
         }
-        public void upravFaul(int id_tym, int cislo)
+        public void upravFaul(int id_tim, int cislo)
         {
-            OracleCommand c = new OracleCommand("select faul from hraci where id_tym = " + id_tym + " and cislo = " + cislo, con);
+            OracleCommand c = new OracleCommand("select faul from hraci where id_tym = " + id_tim + " and cislo = " + cislo, con);
             OracleDataReader reader = c.ExecuteReader();
             int pocet = 0;
             if (reader.Read())
@@ -198,14 +199,14 @@ namespace svetelna_tabula
                 pocet = reader.GetInt32(0);
             }
             pocet++;
-            c = new OracleCommand("UPDATE hraci SET faul = " + pocet + " where id_tym = " + id_tym + " and cislo = " + cislo, con);
+            c = new OracleCommand("UPDATE hraci SET faul = " + pocet + " where id_tym = " + id_tim + " and cislo = " + cislo, con);
             c.ExecuteNonQuery();
             c = new OracleCommand("commit", con);
             c.ExecuteNonQuery();
         }
-        public void upravAsistencia(int id_tym, int cislo)
+        public void upravAsistencia(int id_tim, int cislo)
         {
-            OracleCommand c = new OracleCommand("select pocet_asistencii from hraci where id_tym = " + id_tym + " and cislo = " + cislo, con);
+            OracleCommand c = new OracleCommand("select pocet_asistencii from hraci where id_tym = " + id_tim + " and cislo = " + cislo, con);
             OracleDataReader reader = c.ExecuteReader();
             int pocet = 0;
             if (reader.Read())
@@ -213,7 +214,7 @@ namespace svetelna_tabula
                 pocet = reader.GetInt32(0);
             }
             pocet++;
-            c = new OracleCommand("UPDATE hraci SET pocet_asistencii = " + pocet + " where id_tym = " + id_tym + " and cislo = " + cislo, con);
+            c = new OracleCommand("UPDATE hraci SET pocet_asistencii = " + pocet + " where id_tym = " + id_tim + " and cislo = " + cislo, con);
             c.ExecuteNonQuery();
             c = new OracleCommand("commit", con);
             c.ExecuteNonQuery();

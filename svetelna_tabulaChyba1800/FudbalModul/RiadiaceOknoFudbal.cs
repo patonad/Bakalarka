@@ -20,13 +20,13 @@ namespace FudbalModul
         private Databaza dat;
         private HlavnaPlochaFudbal tabula;
         private UvodneMenuFudbal okno;
-        int idTymHostia, iDTymDomaci;
+        int idTimHostia, iDTimDomaci;
         string hostia, domaci;
         public RiadiaceOknoFudbal(string pHostia, string pDomaci, UvodneMenuFudbal pOkno, Databaza pDat, int pId, int pHos, int pDom)
         {
             this.dat = pDat;
-            this.iDTymDomaci = pDom;
-            this.idTymHostia = pHos;
+            this.iDTimDomaci = pDom;
+            this.idTimHostia = pHos;
             this.hostia = pHostia;
             this.domaci = pDomaci;
             InitializeComponent();
@@ -71,7 +71,7 @@ namespace FudbalModul
         {
             if (tBHracGol.Text != "")
             {
-                tabula.gol(tBHracGol.Text, tBAsistencia.Text, idTymHostia, "h");
+                tabula.gol(tBHracGol.Text, tBAsistencia.Text, idTimHostia, "h");
                 tBHracGol.Text = "";
                 tBAsistencia.Text = "";
             }
@@ -81,7 +81,7 @@ namespace FudbalModul
         {
             if (tBHracGol.Text != "")
             {
-                tabula.gol(tBHracGol.Text, tBAsistencia.Text, iDTymDomaci, "d");
+                tabula.gol(tBHracGol.Text, tBAsistencia.Text, iDTimDomaci, "d");
                 tBAsistencia.Text = "";
                 tBHracGol.Text = "";
             }
@@ -163,7 +163,7 @@ namespace FudbalModul
         {
             if (!tabula.ideCas())
             {
-                OvladacStat s = new OvladacStat(idTymHostia,iDTymDomaci, hostia, domaci, dat,"Fudbal");
+                OvladacStat s = new OvladacStat(idTimHostia,iDTimDomaci, hostia, domaci, dat,"Fudbal");
                 s.ShowDialog();
             }
             else

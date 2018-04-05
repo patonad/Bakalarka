@@ -80,4 +80,3 @@ C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\svetelna_tabula\
 C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\svetelna_tabula\obj\Debug\svetelna_tabula.Uvod.resources
 C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\svetelna_tabula\obj\Debug\svetelna_tabula.ZobrazovacStat.resources
 C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\svetelna_tabula\obj\Debug\svetelna_tabula.csproj.GenerateResource.Cache
-C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\svetelna_tabula\obj\Debug\svetelna_tabula.PridajHraca.resources

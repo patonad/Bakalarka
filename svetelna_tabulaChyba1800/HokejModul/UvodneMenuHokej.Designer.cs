@@ -83,9 +83,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(40, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 16);
+            this.label2.Size = new System.Drawing.Size(75, 16);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Tým hostí:";
+            this.label2.Text = "Tím hostí:";
             // 
             // label1
             // 
@@ -94,9 +94,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Location = new System.Drawing.Point(40, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 16);
+            this.label1.Size = new System.Drawing.Size(109, 16);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Tým domácich:";
+            this.label1.Text = "Tím domácich:";
             // 
             // UvodneMenuHokej
             // 

@@ -125,9 +125,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(91, 129);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 16);
+            this.label3.Size = new System.Drawing.Size(90, 16);
             this.label3.TabIndex = 32;
-            this.label3.Text = "Gól dal tým: ";
+            this.label3.Text = "Gól dal tím: ";
             // 
             // lCasRiadOknoHokej
             // 
@@ -221,9 +221,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(91, 252);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 16);
+            this.label4.Size = new System.Drawing.Size(70, 16);
             this.label4.TabIndex = 34;
-            this.label4.Text = "Faul tým: ";
+            this.label4.Text = "Faul tím: ";
             // 
             // bFaulHostia
             // 

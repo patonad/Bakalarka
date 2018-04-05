@@ -72,7 +72,7 @@
             this.LBdomaci.Name = "LBdomaci";
             this.LBdomaci.Size = new System.Drawing.Size(240, 40);
             this.LBdomaci.TabIndex = 37;
-            this.LBdomaci.Text = "Tým domácich";
+            this.LBdomaci.Text = "Tím";
             this.LBdomaci.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LbHostia
@@ -84,7 +84,7 @@
             this.LbHostia.Name = "LbHostia";
             this.LbHostia.Size = new System.Drawing.Size(240, 40);
             this.LbHostia.TabIndex = 36;
-            this.LbHostia.Text = "Tým";
+            this.LbHostia.Text = "Tím";
             this.LbHostia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lPolcasFudbal

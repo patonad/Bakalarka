@@ -26,19 +26,19 @@ namespace FudbalModul
         {
             bool je = false;
             int idZapasu = 0;
-            int hos = dat.zistiCiJaTym(tBHostia.Text, "Fudbal");
+            int hos = dat.zistiCiJaTim(tBHostia.Text, "Fudbal");
             if (hos == 0)
             {
-                MessageBox.Show("Tym " + tBHostia.Text + " nebol najdený.");
+                MessageBox.Show("Tím " + tBHostia.Text + " nebol najdený.");
             }
             else
             {
                 je = true;
             }
-            int dom = dat.zistiCiJaTym(tBDomaci.Text, "Fudbal");
+            int dom = dat.zistiCiJaTim(tBDomaci.Text, "Fudbal");
             if (dom == 0)
             {
-                MessageBox.Show("Tym " + tBDomaci.Text + " nebol najdený.");
+                MessageBox.Show("Tím " + tBDomaci.Text + " nebol najdený.");
             }
             else if (je)
             {

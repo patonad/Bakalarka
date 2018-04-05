@@ -18,7 +18,7 @@ namespace HokejModul
         private Databaza dat;
         private HlavnaPlochaHokej tabula;
         private UvodneMenuHokej okno;
-        int idTymHostia, iDTymDomaci;
+        int idTimHostia, iDTimDomaci;
         string hostia, domaci;
         /// <summary>
         /// Konstruktor pre vytvorenie riadiaceho okna 
@@ -31,8 +31,8 @@ namespace HokejModul
         {
             this.hostia = pHostia;
             this.domaci = pDomaci;
-            this.iDTymDomaci = pDom;
-            this.idTymHostia = pHos;
+            this.iDTimDomaci = pDom;
+            this.idTimHostia = pHos;
             InitializeComponent();
             dat = pDat;
             this.okno = pOkno;
@@ -105,7 +105,7 @@ namespace HokejModul
         {
             if (tBHracGol.Text != "")
             {
-                tabula.gol(tBHracGol.Text, tBAsistencia.Text, idTymHostia, "h");
+                tabula.gol(tBHracGol.Text, tBAsistencia.Text, idTimHostia, "h");
                 tBHracGol.Text = "";
                 tBAsistencia.Text = "";
             }
@@ -115,7 +115,7 @@ namespace HokejModul
         {
             if (tBHracGol.Text != "")
             {
-                tabula.gol(tBHracGol.Text, tBAsistencia.Text, iDTymDomaci, "d");
+                tabula.gol(tBHracGol.Text, tBAsistencia.Text, iDTimDomaci, "d");
                 tBHracGol.Text = "";
                 tBAsistencia.Text = "";
             }
@@ -125,7 +125,7 @@ namespace HokejModul
         {
             if (tBHracFaul.Text != "")
             {
-                tabula.faul(tBHracFaul.Text, idTymHostia, "h");
+                tabula.faul(tBHracFaul.Text, idTimHostia, "h");
                 tBHracFaul.Text = "";
             }
         }
@@ -134,7 +134,7 @@ namespace HokejModul
         {
             if (tBHracFaul.Text != "")
             {
-               tabula.faul(tBHracFaul.Text, iDTymDomaci, "d");
+               tabula.faul(tBHracFaul.Text, iDTimDomaci, "d");
                 tBHracFaul.Text = "";
             }
         }
@@ -215,7 +215,7 @@ namespace HokejModul
         {
             if (!tabula.ideCas())
             {
-                OvladacStat s = new OvladacStat(idTymHostia,iDTymDomaci,hostia,domaci,dat,"Hokej");
+                OvladacStat s = new OvladacStat(idTimHostia,iDTimDomaci,hostia,domaci,dat,"Hokej");
                 
                 s.ShowDialog();
             }

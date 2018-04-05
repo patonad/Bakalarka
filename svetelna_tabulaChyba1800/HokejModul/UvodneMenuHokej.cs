@@ -30,18 +30,18 @@ namespace HokejModul
         {
             bool je = false;
             int idZapasu = 0;
-            int hos = dat.zistiCiJaTym(tBHostia.Text, "Hokej");
+            int hos = dat.zistiCiJaTim(tBHostia.Text, "Hokej");
             if ( hos == 0)
             {
-                MessageBox.Show("Tym " + tBHostia.Text + " nebol najdený.");
+                MessageBox.Show("Tím " + tBHostia.Text + " nebol najdený.");
             }
             else {
                 je = true;
             }
-            int dom = dat.zistiCiJaTym(tBDomaci.Text, "Hokej");
+            int dom = dat.zistiCiJaTim(tBDomaci.Text, "Hokej");
             if (dom == 0)
             {
-                MessageBox.Show("Tym " + tBDomaci.Text + " nebol najdený.");
+                MessageBox.Show("Tím " + tBDomaci.Text + " nebol najdený.");
             }else if(je){
                 idZapasu = dat.pridajZapas(hos, dom);
             }

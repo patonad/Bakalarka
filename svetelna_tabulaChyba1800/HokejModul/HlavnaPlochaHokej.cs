@@ -20,7 +20,7 @@ namespace HokejModul
     {
         private Databaza dat;
         private System.Timers.Timer timer, realCasTimer;
-        int idZapasu, idTymHostia, predlzenieCas = 0, iDTymDomaci, m = 20, s = 0, tretina = 1, scoreHostia = 0, scoreDomaci = 0, casZobrazenia = 0;
+        int idZapasu, idTimHostia, predlzenieCas = 0, iDTimDomaci, m = 20, s = 0, tretina = 1, scoreHostia = 0, scoreDomaci = 0, casZobrazenia = 0;
         bool casIde = false;
 
 
@@ -32,8 +32,8 @@ namespace HokejModul
         public HlavnaPlochaHokej(string pHostia, string pDomaci, RiadiaceOknoHokej pOkno, Databaza pDat, int pId, int pHos, int pDom)
         {
             this.idZapasu = pId;
-            this.iDTymDomaci = pDom;
-            this.idTymHostia = pHos;
+            this.iDTimDomaci = pDom;
+            this.idTimHostia = pHos;
             dat = pDat;
             riadiaceOkno = pOkno;
             hostia = pHostia;
@@ -172,7 +172,7 @@ namespace HokejModul
             casIde = false;
         }
 
-        public bool asistencia(string cislo, int id_tym)
+        public bool asistencia(string cislo, int id_tim)
         {
             int x = 0;
             if (idZapasu != 0)
@@ -186,14 +186,14 @@ namespace HokejModul
                         MessageBox.Show("Hráč neexzistuje");
                         return false;
                     }
-                    string hrac = dat.zistiCiJeHrac(id_tym, x);
+                    string hrac = dat.zistiCiJeHrac(id_tim, x);
 
                     if (hrac != "")
                     {
 
 
-                        dat.pridajZaznam(idZapasu, id_tym, x, spracujCas(), "asistencia");
-                        dat.upravAsistencia(id_tym, x);
+                        dat.pridajZaznam(idZapasu, id_tim, x, spracujCas(), "asistencia");
+                        dat.upravAsistencia(id_tim, x);
                         return true;
 
 
@@ -266,9 +266,9 @@ namespace HokejModul
             realCasTimer.Stop();
         }
 
-        public void gol(string cisloGol, string cisloAsis, int id_tym, string kto)
+        public void gol(string cisloGol, string cisloAsis, int id_tim, string kto)
         {
-            if (asistencia(cisloAsis, id_tym))
+            if (asistencia(cisloAsis, id_tim))
             {
                 int x = 0;
 
@@ -279,7 +279,7 @@ namespace HokejModul
                 }
                 stopCasovac();
 
-                string hrac = dat.zistiCiJeHrac(id_tym, x);
+                string hrac = dat.zistiCiJeHrac(id_tim, x);
 
                 if (idZapasu == 0)
                 {
@@ -292,10 +292,10 @@ namespace HokejModul
                     casZobrazenia = 5;
 
 
-                    dat.pridajZaznam(idZapasu, id_tym, x, spracujCas(), "gol");
+                    dat.pridajZaznam(idZapasu, id_tim, x, spracujCas(), "gol");
                     zaznamenajGol(kto);
                     dat.upravSkore(idZapasu, scoreHostia, scoreDomaci);
-                    dat.upravGol(id_tym, x);
+                    dat.upravGol(id_tim, x);
                 }
                 else
                 {
@@ -330,7 +330,7 @@ namespace HokejModul
             }
 
         }
-        public void faul(string cislo, int id_tym, string kto)
+        public void faul(string cislo, int id_tim, string kto)
         {
 
             int x = 0;
@@ -342,7 +342,7 @@ namespace HokejModul
             }
             stopCasovac();
 
-            string hrac = dat.zistiCiJeHrac(id_tym, x);
+            string hrac = dat.zistiCiJeHrac(id_tim, x);
 
             if (idZapasu == 0)
             {
@@ -350,7 +350,8 @@ namespace HokejModul
             }
             else if (hrac != "")
             {
-                dat.pridajZaznam(idZapasu, id_tym, x, spracujCas(), "faul");
+                dat.pridajZaznam(idZapasu, id_tim, x, spracujCas(), "faul");
+                dat.upravFaul(id_tim, x);
                 pridajFaul(kto);
             }
             else

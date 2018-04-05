@@ -64,7 +64,7 @@ namespace svetelna_tabula
         {
             if (id_hostia == 0 || id_domaci == 0)
             {
-                MessageBox.Show("Tým nebol najdený");
+                MessageBox.Show("Tím nebol najdený");
             }
             else {
                 if (z2 == null)
@@ -97,14 +97,14 @@ namespace svetelna_tabula
                     z.Close();
                 }
                 z = new ZobrazovacStat();
-                z.vloz(dat.nacitajTop10(id_hostia), "Top 10 hráčov týmu: " + hostia);
+                z.vloz(dat.nacitajTop10(id_hostia), "Top 10 hráčov tímu: " + hostia);
                 z.Show();
 
 
             }
             else
             {
-                MessageBox.Show("Tým nebol najdený");
+                MessageBox.Show("Tím nebol najdený");
             }
         }
 
@@ -123,14 +123,14 @@ namespace svetelna_tabula
                     z.Close();
                 }
                 z = new ZobrazovacStat();
-                z.vloz(dat.nacitajTop10(id_domaci), "Top 10 hráčov týmu: " + domaci);
+                z.vloz(dat.nacitajTop10(id_domaci), "Top 10 hráčov tímu: " + domaci);
                 z.Show();
 
 
             }
             else
             {
-                MessageBox.Show("Tým nebol najdený");
+                MessageBox.Show("Tím nebol najdený");
             }
         }
     }
