@@ -19,7 +19,7 @@ namespace HokejModul
         {
             InitializeComponent();
             dat = new Databaza();
-            dat.pripoj();
+            dat.Pripoj();
         }
         /// <summary>
         /// Metoda ktora sa zavola po kliknuti na Start a vytvori riadiace okno pre hokej
@@ -30,7 +30,7 @@ namespace HokejModul
         {
             bool je = false;
             int idZapasu = 0;
-            int hos = dat.zistiCiJaTim(tBHostia.Text, "Hokej");
+            int hos = dat.ZistiCiJeTim(tBHostia.Text, "Hokej");
             if ( hos == 0)
             {
                 MessageBox.Show("Tím " + tBHostia.Text + " nebol najdený.");
@@ -38,12 +38,12 @@ namespace HokejModul
             else {
                 je = true;
             }
-            int dom = dat.zistiCiJaTim(tBDomaci.Text, "Hokej");
+            int dom = dat.ZistiCiJeTim(tBDomaci.Text, "Hokej");
             if (dom == 0)
             {
                 MessageBox.Show("Tím " + tBDomaci.Text + " nebol najdený.");
             }else if(je){
-                idZapasu = dat.pridajZapas(hos, dom);
+                idZapasu = dat.PridajZapas(hos, dom);
             }
 
             string hostia, domaci;
@@ -82,7 +82,7 @@ namespace HokejModul
 
         private void UvodneMenuHokej_FormClosing(object sender, FormClosingEventArgs e)
         {
-            dat.odpoj();
+            dat.Odpoj();
         }
     }
 }

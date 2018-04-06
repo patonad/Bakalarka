@@ -34,3 +34,4 @@ C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\Rozhranie\bin\De
 C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\Rozhranie\bin\Debug\Rozhranie.pdb
 C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\Rozhranie\obj\Debug\Rozhranie.dll
 C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\Rozhranie\obj\Debug\Rozhranie.pdb
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\Rozhranie\obj\Debug\Rozhranie.csprojResolveAssemblyReference.cache

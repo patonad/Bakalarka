@@ -58,7 +58,7 @@
             this.bTop10Hostia.TabIndex = 1;
             this.bTop10Hostia.Text = "button1";
             this.bTop10Hostia.UseVisualStyleBackColor = false;
-            this.bTop10Hostia.Click += new System.EventHandler(this.bTop10Hostia_Click);
+            this.bTop10Hostia.Click += new System.EventHandler(this.BTop10Hostia_Click);
             // 
             // bTop10Domaci
             // 
@@ -69,7 +69,7 @@
             this.bTop10Domaci.TabIndex = 3;
             this.bTop10Domaci.Text = "button1";
             this.bTop10Domaci.UseVisualStyleBackColor = false;
-            this.bTop10Domaci.Click += new System.EventHandler(this.bTop10Domaci_Click);
+            this.bTop10Domaci.Click += new System.EventHandler(this.BTop10Domaci_Click);
             // 
             // label2
             // 
@@ -91,7 +91,7 @@
             this.vTop10Celkovo.TabIndex = 4;
             this.vTop10Celkovo.Text = "Zobraz";
             this.vTop10Celkovo.UseVisualStyleBackColor = false;
-            this.vTop10Celkovo.Click += new System.EventHandler(this.vTop10Celkovo_Click);
+            this.vTop10Celkovo.Click += new System.EventHandler(this.BTop10Celkovo_Click);
             // 
             // label3
             // 
@@ -113,7 +113,7 @@
             this.bOdhohrateZapasy.TabIndex = 6;
             this.bOdhohrateZapasy.Text = "Zobraz";
             this.bOdhohrateZapasy.UseVisualStyleBackColor = false;
-            this.bOdhohrateZapasy.Click += new System.EventHandler(this.bOdhohrateZapasy_Click);
+            this.bOdhohrateZapasy.Click += new System.EventHandler(this.BOdhohrateZapasy_Click);
             // 
             // label4
             // 
@@ -145,7 +145,6 @@
             this.Name = "OvladacStat";
             this.Text = "Štatistika";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OvladacStat_FormClosing);
-            this.Load += new System.EventHandler(this.OvladacStat_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

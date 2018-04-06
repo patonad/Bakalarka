@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rozhranie
 {
-    public interface reklama
+    public interface Reklama
     {
         void Prezentuj();
     }

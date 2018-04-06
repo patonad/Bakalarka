@@ -19,7 +19,7 @@ namespace svetelna_tabula
 
         }
        
-        public int zistiCiJaTim(string meno, string sport)
+        public int ZistiCiJeTim(string meno, string sport)
         {
 
             OracleCommand c = new OracleCommand("select * from tym where nazov = '" + meno + "' and sport =  '" + sport + "'", con);
@@ -35,7 +35,7 @@ namespace svetelna_tabula
 
 
         }
-        public string zistiCiJeHrac(int id_tim, int cislo)
+        public string ZistiCiJeHrac(int id_tim, int cislo)
         {
 
             OracleCommand c = new OracleCommand("select * from hraci where id_tym = '" + id_tim + "' and Cislo =  '" + cislo + "'", con);
@@ -51,7 +51,7 @@ namespace svetelna_tabula
 
 
         }
-        public List<List<string>> nacitajOdohrateZapasy(int id_timHostia, int id_timDomaci)
+        public List<List<string>> NacitajOdohrateZapasy(int id_timHostia, int id_timDomaci)
         {
             OracleCommand c = new OracleCommand("select zapas.ID_ZAPAS, zapas.GOLHOSTIA, zapas.GOLDOMACI,zapas.DATUM, dom.NAZOV as domaci, hos.NaZOV as hostia "+
             "from zapas join tym dom on (zapas.TYM_DOMACI = dom.ID_TYM) join tym hos on (zapas.TYM_HOSTIA = hos.ID_TYM)"+
@@ -85,7 +85,7 @@ namespace svetelna_tabula
 
 
         }
-        public List<List<string>> nacitajTop10Celkovo(string sport)
+        public List<List<string>> NacitajTop10Celkovo(string sport)
         {
             OracleCommand c = new OracleCommand("select  meno, CISLO,PRIEZVISKO,POCET_GOLOV,POCET_ASISTENCII,(POCET_ASISTENCII + POCET_GOLOV) as" +
             " score, tym.NAZOV from hraci join tym using(id_tym) WHERE sport = '" + sport + "'order by score desc FETCH FIRST 10 ROWS ONLY", con);
@@ -116,7 +116,7 @@ namespace svetelna_tabula
 
 
         }
-        public List<List<string>> nacitajTop10(int id_tim)
+        public List<List<string>> NacitajTop10(int id_tim)
         {
             OracleCommand c = new OracleCommand("select  meno, CISLO,PRIEZVISKO,POCET_GOLOV,POCET_ASISTENCII,(POCET_ASISTENCII + POCET_GOLOV) as"+
             " score from hraci WHERE ID_TYM = '"+id_tim+ "'order by score desc FETCH FIRST 10 ROWS ONLY", con);
@@ -144,7 +144,7 @@ namespace svetelna_tabula
            
 
         }
-        public int pridajZapas(int hostia, int domaci)
+        public int PridajZapas(int hostia, int domaci)
         {
             String datum = "" + DateTime.Now.Year + "-" + DateTime.Now.Month + "-" + DateTime.Now.Day;
             OracleCommand c = new OracleCommand("select max(id_zapas) from zapas", con);
@@ -160,21 +160,21 @@ namespace svetelna_tabula
             c.ExecuteNonQuery();
             return index;
         }
-        public void pridajZaznam(int id_zapas, int idTimu, int cislo, string cas, string typ)
+        public void PridajZaznam(int id_zapas, int idTimu, int cislo, string cas, string typ)
         {
             OracleCommand c = new OracleCommand("INSERT INTO ZAZNAM (ID_ZAPAS, ID_TYM, CISLO, CAS, TYP_ZAZNAMU) VALUES ('" + id_zapas + 
                 "', '" + idTimu + "', '" + cislo + "', '" + cas + "', '" + typ + "')", con);
             c.ExecuteNonQuery();
 
         }
-        public void upravSkore(int id, int hostia, int domaci)
+        public void UpravSkore(int id, int hostia, int domaci)
         {
             OracleCommand c = new OracleCommand("UPDATE zapas SET golHostia = "+ hostia+", golDomaci = "+domaci+" where ID_ZAPAS = "+id, con);
             c.ExecuteNonQuery();
             c = new OracleCommand("commit", con);
             c.ExecuteNonQuery();
         }
-        public void upravGol(int id_tim, int cislo)
+        public void UpravGol(int id_tim, int cislo)
         {
             OracleCommand c = new OracleCommand("select pocet_golov from hraci where id_tym = "+ id_tim+" and cislo = " + cislo, con);
             OracleDataReader reader = c.ExecuteReader();
@@ -189,7 +189,7 @@ namespace svetelna_tabula
             c = new OracleCommand("commit", con);
             c.ExecuteNonQuery();
         }
-        public void upravFaul(int id_tim, int cislo)
+        public void UpravFaul(int id_tim, int cislo)
         {
             OracleCommand c = new OracleCommand("select faul from hraci where id_tym = " + id_tim + " and cislo = " + cislo, con);
             OracleDataReader reader = c.ExecuteReader();
@@ -204,7 +204,7 @@ namespace svetelna_tabula
             c = new OracleCommand("commit", con);
             c.ExecuteNonQuery();
         }
-        public void upravAsistencia(int id_tim, int cislo)
+        public void UpravAsistencia(int id_tim, int cislo)
         {
             OracleCommand c = new OracleCommand("select pocet_asistencii from hraci where id_tym = " + id_tim + " and cislo = " + cislo, con);
             OracleDataReader reader = c.ExecuteReader();
@@ -219,8 +219,7 @@ namespace svetelna_tabula
             c = new OracleCommand("commit", con);
             c.ExecuteNonQuery();
         }
-
-        public bool pripoj()
+        public bool Pripoj()
         {
             try
             {
@@ -234,7 +233,7 @@ namespace svetelna_tabula
                 return false;
             }
         }
-        public void odpoj()
+        public void Odpoj()
         {
             OracleCommand c = new OracleCommand("Commit", con);
             c.ExecuteNonQuery();

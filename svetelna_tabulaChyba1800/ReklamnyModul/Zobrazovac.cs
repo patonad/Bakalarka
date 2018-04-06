@@ -37,12 +37,7 @@ namespace ReklamnyModul
 
 
         }
-
-        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
-        {
-
-        }
-        public AxWMPLib.AxWindowsMediaPlayer wMP()
+        public AxWMPLib.AxWindowsMediaPlayer WMP()
         {
             return axWindowsMediaPlayer1;
         }

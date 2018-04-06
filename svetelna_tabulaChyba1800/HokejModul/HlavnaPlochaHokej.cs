@@ -186,14 +186,14 @@ namespace HokejModul
                         MessageBox.Show("Hráč neexzistuje");
                         return false;
                     }
-                    string hrac = dat.zistiCiJeHrac(id_tim, x);
+                    string hrac = dat.ZistiCiJeHrac(id_tim, x);
 
                     if (hrac != "")
                     {
 
 
-                        dat.pridajZaznam(idZapasu, id_tim, x, spracujCas(), "asistencia");
-                        dat.upravAsistencia(id_tim, x);
+                        dat.PridajZaznam(idZapasu, id_tim, x, spracujCas(), "asistencia");
+                        dat.UpravAsistencia(id_tim, x);
                         return true;
 
 
@@ -279,7 +279,7 @@ namespace HokejModul
                 }
                 stopCasovac();
 
-                string hrac = dat.zistiCiJeHrac(id_tim, x);
+                string hrac = dat.ZistiCiJeHrac(id_tim, x);
 
                 if (idZapasu == 0)
                 {
@@ -292,10 +292,10 @@ namespace HokejModul
                     casZobrazenia = 5;
 
 
-                    dat.pridajZaznam(idZapasu, id_tim, x, spracujCas(), "gol");
+                    dat.PridajZaznam(idZapasu, id_tim, x, spracujCas(), "gol");
                     zaznamenajGol(kto);
-                    dat.upravSkore(idZapasu, scoreHostia, scoreDomaci);
-                    dat.upravGol(id_tim, x);
+                    dat.UpravSkore(idZapasu, scoreHostia, scoreDomaci);
+                    dat.UpravGol(id_tim, x);
                 }
                 else
                 {
@@ -342,7 +342,7 @@ namespace HokejModul
             }
             stopCasovac();
 
-            string hrac = dat.zistiCiJeHrac(id_tim, x);
+            string hrac = dat.ZistiCiJeHrac(id_tim, x);
 
             if (idZapasu == 0)
             {
@@ -350,8 +350,8 @@ namespace HokejModul
             }
             else if (hrac != "")
             {
-                dat.pridajZaznam(idZapasu, id_tim, x, spracujCas(), "faul");
-                dat.upravFaul(id_tim, x);
+                dat.PridajZaznam(idZapasu, id_tim, x, spracujCas(), "faul");
+                dat.UpravFaul(id_tim, x);
                 pridajFaul(kto);
             }
             else

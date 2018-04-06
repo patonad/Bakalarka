@@ -39,7 +39,7 @@ namespace svetelna_tabula
             
         }
 
-        private void vTop10Celkovo_Click(object sender, EventArgs e)
+        private void BTop10Celkovo_Click(object sender, EventArgs e)
         {
             if (z2 == null)
             {
@@ -51,16 +51,11 @@ namespace svetelna_tabula
                 z.Close();
             }
             z = new ZobrazovacStat();
-            z.vloz(dat.nacitajTop10Celkovo(sport), "Top 10 hráčov celkovo");
+            z.Vloz(dat.NacitajTop10Celkovo(sport), "Top 10 hráčov celkovo");
             z.Show();
         }
 
-        private void OvladacStat_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bOdhohrateZapasy_Click(object sender, EventArgs e)
+        private void BOdhohrateZapasy_Click(object sender, EventArgs e)
         {
             if (id_hostia == 0 || id_domaci == 0)
             {
@@ -77,13 +72,13 @@ namespace svetelna_tabula
                     z.Close();
                 }
                 z = new ZobrazovacStat();
-                z.vloz(dat.nacitajOdohrateZapasy(id_hostia,id_domaci), "Tabuľka zápasov");
+                z.Vloz(dat.NacitajOdohrateZapasy(id_hostia,id_domaci), "Tabuľka zápasov");
                 z.Show();
 
             }
         }
 
-        private void bTop10Hostia_Click(object sender, EventArgs e)
+        private void BTop10Hostia_Click(object sender, EventArgs e)
         {
             if (id_hostia != 0)
             {
@@ -97,7 +92,7 @@ namespace svetelna_tabula
                     z.Close();
                 }
                 z = new ZobrazovacStat();
-                z.vloz(dat.nacitajTop10(id_hostia), "Top 10 hráčov tímu: " + hostia);
+                z.Vloz(dat.NacitajTop10(id_hostia), "Top 10 hráčov tímu: " + hostia);
                 z.Show();
 
 
@@ -108,7 +103,7 @@ namespace svetelna_tabula
             }
         }
 
-        private void bTop10Domaci_Click(object sender, EventArgs e)
+        private void BTop10Domaci_Click(object sender, EventArgs e)
         {
 
             if (id_domaci != 0)
@@ -123,7 +118,7 @@ namespace svetelna_tabula
                     z.Close();
                 }
                 z = new ZobrazovacStat();
-                z.vloz(dat.nacitajTop10(id_domaci), "Top 10 hráčov tímu: " + domaci);
+                z.Vloz(dat.NacitajTop10(id_domaci), "Top 10 hráčov tímu: " + domaci);
                 z.Show();
 
 

@@ -21,12 +21,7 @@ namespace ReklamnyModul
 
 
             InitializeComponent();
-            vyberSubor();
-
-        }
-
-        private void Ovladac_Load(object sender, EventArgs e)
-        {
+            VyberSubor();
 
         }
 
@@ -40,10 +35,10 @@ namespace ReklamnyModul
 
         private void StartVideo_Click(object sender, EventArgs e)
         {
-            if (jeZakliknuetVideo())
+            if (JeZakliknuetVideo())
             {
                 z = new Zobrazovac();
-                AxWMPLib.AxWindowsMediaPlayer prehravac = z.wMP();
+                AxWMPLib.AxWindowsMediaPlayer prehravac = z.WMP();
                 WMPLib.IWMPPlaylist playlist = prehravac.playlistCollection.newPlaylist("myplaylist");
                 WMPLib.IWMPMedia media;
                 for (int i = 0; i < pocetVidei; i++)
@@ -72,7 +67,7 @@ namespace ReklamnyModul
 
 
 
-        private bool jeZakliknuetVideo()
+        private bool JeZakliknuetVideo()
         {
             for (int i = 0; i < pocetVidei; i++)
             {
@@ -83,10 +78,10 @@ namespace ReklamnyModul
             }
             return false;
         }
-        private void vyberSubor()
+        private void VyberSubor()
         {
             DirectoryInfo d = new DirectoryInfo("..\\..\\Reklamy");
-            string[] extensions = new[] { ".avi", ".mp4" };
+            string[] extensions = new[] { ".avi", ".mp4",  ".wmv", ".mov"};
             FileInfo[] files =
                 d.GetFiles()
                      .Where(f => extensions.Contains(f.Extension.ToLower()))
@@ -108,17 +103,17 @@ namespace ReklamnyModul
         {
             if (z != null)
             {
-                z.wMP().Ctlcontrols.stop();
+                z.WMP().Ctlcontrols.stop();
                 z.Close();
                 this.Close();
             }
         }
 
-        private void pauseVideo_Click(object sender, EventArgs e)
+        private void PauseVideo_Click(object sender, EventArgs e)
         {
             if (z != null)
             {
-                AxWMPLib.AxWindowsMediaPlayer prehravac = z.wMP();
+                AxWMPLib.AxWindowsMediaPlayer prehravac = z.WMP();
 
                 if (prehravac.playState == WMPLib.WMPPlayState.wmppsPaused)
                 {

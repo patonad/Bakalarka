@@ -73,7 +73,7 @@
             this.pauseVideo.TabIndex = 5;
             this.pauseVideo.Text = "Pause";
             this.pauseVideo.UseVisualStyleBackColor = false;
-            this.pauseVideo.Click += new System.EventHandler(this.pauseVideo_Click);
+            this.pauseVideo.Click += new System.EventHandler(this.PauseVideo_Click);
             // 
             // Ovladac
             // 
@@ -89,7 +89,6 @@
             this.Name = "Ovladac";
             this.Text = "Reklama";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ovladac_FormClosing);
-            this.Load += new System.EventHandler(this.Ovladac_Load);
             this.ResumeLayout(false);
 
         }

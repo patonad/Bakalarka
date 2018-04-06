@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using Rozhranie;
 namespace ReklamnyModul
 {
-    public class ReklamnyModul : reklama
+    public class ReklamnyModul : Reklama
     {
         public void Prezentuj()
         {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "svetelna_tabula", "svetelna_tabula\svetelna_tabula.csproj", "{37E62FF5-EB3F-4BBE-9A37-2AC4B24F9EB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SvetelnaTabula", "svetelna_tabula\SvetelnaTabula.csproj", "{37E62FF5-EB3F-4BBE-9A37-2AC4B24F9EB7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HokejModul", "HokejModul\HokejModul.csproj", "{7E33D528-4187-4746-9CF0-017C3E583432}"
 EndProject

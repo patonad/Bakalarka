@@ -133,7 +133,7 @@ namespace FudbalModul
         {
             var priecinokPluginov = Path.Combine(new DirectoryInfo(".").FullName, "pluginy");
             var moduly = SpracovavacModulov.NacitajModuly(priecinokPluginov);
-            foreach (reklama modul in moduly)
+            foreach (Reklama modul in moduly)
             {
 
                 reklama.Tag = modul;
@@ -150,7 +150,7 @@ namespace FudbalModul
             if (!tabula.ideCas())
             {
                 var button = (Button)sender;
-                var modul = (reklama)button.Tag;
+                var modul = (Reklama)button.Tag;
                 modul.Prezentuj();
             }
             else

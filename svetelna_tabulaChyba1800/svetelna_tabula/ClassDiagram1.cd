@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="svetelna_tabula.Databaza">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAABAAACAAgQQADAAAAAAEAAIAABgAAAA=</HashCode>
+      <FileName>Databaza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="svetelna_tabula.OvladacStat">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="BTop10Domaci_Click" Hidden="true" />
+      <Method Name="BTop10Hostia_Click" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQgIADAACAAAhAAAAiACABCAAAAAIAAASAQEQAgAAA=</HashCode>
+      <FileName>OvladacStat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="svetelna_tabula.Program" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="svetelna_tabula.SpracovavacModulov" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SpracovavacModulov.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="svetelna_tabula.Uvod" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACCAAQBAAAACAAAACAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Uvod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="svetelna_tabula.ZobrazovacStat">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAABCAAAAGAAAAIAIAAAAAAAAAAAA=</HashCode>
+      <FileName>ZobrazovacStat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

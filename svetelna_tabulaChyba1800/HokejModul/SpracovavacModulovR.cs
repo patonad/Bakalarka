@@ -12,12 +12,12 @@ namespace HokejModul
 {
     class SpracovavacModulov
     {
-        public static IEnumerable<reklama> NacitajModuly(string cesta)
+        public static IEnumerable<Reklama> NacitajModuly(string cesta)
         {
             var vsetkyKniznice = Directory.GetFiles(cesta, "*.dll");
-            var iModulType = typeof(reklama);
+            var iModulType = typeof(Reklama);
 
-            var result = new List<reklama>();
+            var result = new List<Reklama>();
             foreach (var dll in vsetkyKniznice)
             {
                 var assembly = Assembly.LoadFrom(dll);
@@ -27,7 +27,7 @@ namespace HokejModul
                     {
                         try
                         {
-                            return Activator.CreateInstance(t) as reklama;
+                            return Activator.CreateInstance(t) as Reklama;
                         }
                         catch (Exception )
                         {

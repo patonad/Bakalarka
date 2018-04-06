@@ -54,7 +54,6 @@
       <DependentUpon>HlavnaPlochaHokej.cs</DependentUpon>
     </Compile>
     <Compile Include="HokejModul.cs" />
-    <Compile Include="Hrac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -79,9 +78,9 @@
       <Project>{46cd283b-3f0c-40ec-a01f-8f327f5bbc9d}</Project>
       <Name>Rozhranie</Name>
     </ProjectReference>
-    <ProjectReference Include="..\svetelna_tabula\svetelna_tabula.csproj">
+    <ProjectReference Include="..\svetelna_tabula\SvetelnaTabula.csproj">
       <Project>{37e62ff5-eb3f-4bbe-9a37-2ac4b24f9eb7}</Project>
-      <Name>svetelna_tabula</Name>
+      <Name>SvetelnaTabula</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

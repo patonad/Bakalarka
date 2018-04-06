@@ -17,7 +17,7 @@ namespace svetelna_tabula
         {
             InitializeComponent();           
         }
-        public void vloz(List<List<string>> zaznam, string kto)
+        public void Vloz(List<List<string>> zaznam, string kto)
         {
             InitializeComponent();
             int kolkoy = zaznam.Count;

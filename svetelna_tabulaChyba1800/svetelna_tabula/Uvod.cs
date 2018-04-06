@@ -16,7 +16,7 @@ namespace svetelna_tabula
     {
         public Uvod()
         {
-            InitializeComponent();
+            InitializeComponent ();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -27,8 +27,7 @@ namespace svetelna_tabula
                 var button = new Button
                 {
                     Tag = modul,
-                  //  Text = modul.GetType().Name,
-                    Image = modul.dajIconu(),
+                    Image = modul.DajIconu(),
                     Width = 60,
                     Height = 60
                 };

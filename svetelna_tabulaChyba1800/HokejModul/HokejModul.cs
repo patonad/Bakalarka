@@ -7,7 +7,7 @@ namespace HokejModul
 {
     public class HokejModul : IModul
     {
-        public Image dajIconu()
+        public Image DajIconu()
         {
             return Image.FromFile((".\\pluginy\\iconaHokej.png"));
            

@@ -15,7 +15,7 @@ namespace FudbalModul
             f.ShowDialog();
         }
 
-        Image IModul.dajIconu()
+        Image IModul.DajIconu()
         {
             return Image.FromFile((".\\pluginy\\iconaFudbal.png"));
         }

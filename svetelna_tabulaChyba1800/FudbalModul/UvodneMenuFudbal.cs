@@ -19,14 +19,14 @@ namespace FudbalModul
         {
             InitializeComponent();
             dat = new Databaza();
-            dat.pripoj();
+            dat.Pripoj();
         }
 
         private void lStartFudbal_Click(object sender, EventArgs e)
         {
             bool je = false;
             int idZapasu = 0;
-            int hos = dat.zistiCiJaTim(tBHostia.Text, "Fudbal");
+            int hos = dat.ZistiCiJeTim(tBHostia.Text, "Fudbal");
             if (hos == 0)
             {
                 MessageBox.Show("Tím " + tBHostia.Text + " nebol najdený.");
@@ -35,14 +35,14 @@ namespace FudbalModul
             {
                 je = true;
             }
-            int dom = dat.zistiCiJaTim(tBDomaci.Text, "Fudbal");
+            int dom = dat.ZistiCiJeTim(tBDomaci.Text, "Fudbal");
             if (dom == 0)
             {
                 MessageBox.Show("Tím " + tBDomaci.Text + " nebol najdený.");
             }
             else if (je)
             {
-                idZapasu = dat.pridajZapas(hos, dom);
+                idZapasu = dat.PridajZapas(hos, dom);
             }
 
             string hostia, domaci;
@@ -77,7 +77,7 @@ namespace FudbalModul
 
         private void UvodneMenuFudbal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            dat.odpoj();
+            dat.Odpoj();
         }
     }
 }

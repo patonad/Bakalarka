@@ -177,14 +177,14 @@ namespace FudbalModul
                         MessageBox.Show("Hráč neexzistuje");
                         return false;
                     }
-                    string hrac = dat.zistiCiJeHrac(id_tim, x);
+                    string hrac = dat.ZistiCiJeHrac(id_tim, x);
 
                     if (hrac != "")
                     {
 
 
-                        dat.pridajZaznam(idZapasu, id_tim, x, spracujCas(), "asistencia");
-                        dat.upravAsistencia(id_tim, x);
+                        dat.PridajZaznam(idZapasu, id_tim, x, spracujCas(), "asistencia");
+                        dat.UpravAsistencia(id_tim, x);
                         return true;
 
 
@@ -228,7 +228,7 @@ namespace FudbalModul
                 }
                 stopCasovac();
 
-                string hrac = dat.zistiCiJeHrac(id_tim, x);
+                string hrac = dat.ZistiCiJeHrac(id_tim, x);
 
                 if (idZapasu == 0)
                 {
@@ -241,10 +241,10 @@ namespace FudbalModul
                     casZobrazenia = 5;
 
 
-                    dat.pridajZaznam(idZapasu, id_tim, x, spracujCas(), "gol");
+                    dat.PridajZaznam(idZapasu, id_tim, x, spracujCas(), "gol");
                     zaznamenajGol(kto);
-                    dat.upravSkore(idZapasu, scoreHostia, scoreDomaci);
-                    dat.upravGol(id_tim, x);
+                    dat.UpravSkore(idZapasu, scoreHostia, scoreDomaci);
+                    dat.UpravGol(id_tim, x);
                 }
                 else
                 {

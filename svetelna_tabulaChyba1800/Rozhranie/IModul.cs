@@ -10,6 +10,6 @@ namespace Rozhranie
     public interface IModul
     {
         void Spusti();
-        Image dajIconu();
+        Image DajIconu();
     }
 }
