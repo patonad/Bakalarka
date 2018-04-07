@@ -11,7 +11,7 @@ using System.Timers;
 using System.IO;
 using svetelna_tabula;
 
-namespace FudbalModul
+namespace FutbalModul
 {
     public partial class HlavnaPlochaFutbal : Form
     {
@@ -19,7 +19,7 @@ namespace FudbalModul
         private System.Timers.Timer timer, realCasTimer;
         int idTimHostia, iDTimDomaci, idZapasu, m = 0, s = 0, polcas = 1, scoreHostia = 0, scoreDomaci = 0, casZobrazenia = 0, predlzenieCas = 0;
         bool casIde = false;
-        private void HlavnaPlochaFudbal_Load(object sender, EventArgs e)
+        private void HlavnaPlochaFutbal_Load(object sender, EventArgs e)
         {
             timer = new System.Timers.Timer();
             // inerval casovacu
@@ -73,7 +73,7 @@ namespace FudbalModul
         public void Predlzenie(int cas)
         {
             predlzenieCas = cas;
-            lPolcasFudbal.Text = "P";
+            lPolcasFutbal.Text = "P";
             riadiaceOkno.NastavPolcas("" + polcas);
         }
         private void Tik(object sender, ElapsedEventArgs e)
@@ -102,12 +102,12 @@ namespace FudbalModul
                     {
                         polcas++;
                     }
-                    lPolcasFudbal.Text = "" + polcas;
+                    lPolcasFutbal.Text = "" + polcas;
                     riadiaceOkno.NastavPolcas(""+polcas);
                 }
 
                 String aktCas = string.Format("{0}:{1}", m.ToString().PadLeft(2, '0'), s.ToString().PadLeft(2, '0'));
-                lCasFudbal.Text = aktCas;
+                lCasFutbal.Text = aktCas;
                 riadiaceOkno.NastavCas(aktCas);
                 if (casZobrazenia > 0)
                 {
@@ -264,13 +264,13 @@ namespace FudbalModul
             String cas = DateTime.Now.ToShortTimeString();
             //mut.WaitOne();
 
-            Invoke((MethodInvoker)delegate { lCasFudbal.Text = cas; });
+            Invoke((MethodInvoker)delegate { lCasFutbal.Text = cas; });
             // lCasHokej.Text = cas;
             //  mut.ReleaseMutex();
         }
         public void HraciCas()
         {
-            Invoke((MethodInvoker)delegate { lCasFudbal.Text = string.Format("{0}:{1}", m.ToString().PadLeft(2, '0'), s.ToString().PadLeft(2, '0')); ; });
+            Invoke((MethodInvoker)delegate { lCasFutbal.Text = string.Format("{0}:{1}", m.ToString().PadLeft(2, '0'), s.ToString().PadLeft(2, '0')); ; });
             realCasTimer.Stop();
         }
     }

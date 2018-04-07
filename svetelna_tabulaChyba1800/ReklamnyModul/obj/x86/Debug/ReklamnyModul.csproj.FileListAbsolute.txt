@@ -16,3 +16,5 @@ C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\ob
 C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\x86\Debug\ReklamnyModul.csproj.GenerateResource.Cache
 C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\x86\Debug\ReklamnyModul.dll
 C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\ReklamnyModul\obj\x86\Debug\ReklamnyModul.pdb
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\bin\Debug\pluginy\ReklamnyModul.dll
+C:\Users\Pato\Desktop\BC git\Bakalarka\svetelna_tabulaChyba1800\bin\Debug\pluginy\ReklamnyModul.pdb

@@ -1,4 +1,4 @@
-﻿namespace FudbalModul
+﻿namespace FutbalModul
 {
     partial class RiadiaceOknoFutbal
     {
@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bRealCasRiadOknoFudbal = new System.Windows.Forms.Button();
+            this.bRealCasRiadOknoFutbal = new System.Windows.Forms.Button();
             this.bGolDomaci = new System.Windows.Forms.Button();
             this.bGolHostia = new System.Windows.Forms.Button();
-            this.bKoniecRiadOknoFudbal = new System.Windows.Forms.Button();
+            this.bKoniecRiadOknoFutbal = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tBHracGol = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lCasRiadOknoFudbal = new System.Windows.Forms.Label();
+            this.lCasRiadOknoFutbal = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lPolcasRiadOknoFudbal = new System.Windows.Forms.Label();
+            this.lPolcasRiadOknoFutbal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.bStopFudbal = new System.Windows.Forms.Button();
-            this.bStartFudbal = new System.Windows.Forms.Button();
+            this.bStopFutbal = new System.Windows.Forms.Button();
+            this.bStartFutbal = new System.Windows.Forms.Button();
             this.tBPredlzenie = new System.Windows.Forms.TextBox();
             this.predlzenie = new System.Windows.Forms.Button();
             this.reklama = new System.Windows.Forms.Button();
@@ -50,19 +50,19 @@
             this.bStat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // bRealCasRiadOknoFudbal
+            // bRealCasRiadOknoFutbal
             // 
-            this.bRealCasRiadOknoFudbal.BackColor = System.Drawing.Color.LightBlue;
-            this.bRealCasRiadOknoFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.bRealCasRiadOknoFudbal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bRealCasRiadOknoFudbal.Location = new System.Drawing.Point(227, 96);
-            this.bRealCasRiadOknoFudbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.bRealCasRiadOknoFudbal.Name = "bRealCasRiadOknoFudbal";
-            this.bRealCasRiadOknoFudbal.Size = new System.Drawing.Size(74, 23);
-            this.bRealCasRiadOknoFudbal.TabIndex = 64;
-            this.bRealCasRiadOknoFudbal.Text = "Reálny čas";
-            this.bRealCasRiadOknoFudbal.UseVisualStyleBackColor = false;
-            this.bRealCasRiadOknoFudbal.Click += new System.EventHandler(this.BRealCasRiadOknoFudbal_Click);
+            this.bRealCasRiadOknoFutbal.BackColor = System.Drawing.Color.LightBlue;
+            this.bRealCasRiadOknoFutbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bRealCasRiadOknoFutbal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.bRealCasRiadOknoFutbal.Location = new System.Drawing.Point(227, 96);
+            this.bRealCasRiadOknoFutbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.bRealCasRiadOknoFutbal.Name = "bRealCasRiadOknoFutbal";
+            this.bRealCasRiadOknoFutbal.Size = new System.Drawing.Size(74, 23);
+            this.bRealCasRiadOknoFutbal.TabIndex = 64;
+            this.bRealCasRiadOknoFutbal.Text = "Reálny čas";
+            this.bRealCasRiadOknoFutbal.UseVisualStyleBackColor = false;
+            this.bRealCasRiadOknoFutbal.Click += new System.EventHandler(this.BRealCasRiadOknoFutbal_Click);
             // 
             // bGolDomaci
             // 
@@ -92,20 +92,20 @@
             this.bGolHostia.UseVisualStyleBackColor = false;
             this.bGolHostia.Click += new System.EventHandler(this.BGolHostia_Click);
             // 
-            // bKoniecRiadOknoFudbal
+            // bKoniecRiadOknoFutbal
             // 
-            this.bKoniecRiadOknoFudbal.BackColor = System.Drawing.Color.LightBlue;
-            this.bKoniecRiadOknoFudbal.CausesValidation = false;
-            this.bKoniecRiadOknoFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.bKoniecRiadOknoFudbal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bKoniecRiadOknoFudbal.Location = new System.Drawing.Point(79, 313);
-            this.bKoniecRiadOknoFudbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.bKoniecRiadOknoFudbal.Name = "bKoniecRiadOknoFudbal";
-            this.bKoniecRiadOknoFudbal.Size = new System.Drawing.Size(194, 51);
-            this.bKoniecRiadOknoFudbal.TabIndex = 57;
-            this.bKoniecRiadOknoFudbal.Text = "KONIEC";
-            this.bKoniecRiadOknoFudbal.UseVisualStyleBackColor = false;
-            this.bKoniecRiadOknoFudbal.Click += new System.EventHandler(this.BKoniecRiadOknoFudbal_Click);
+            this.bKoniecRiadOknoFutbal.BackColor = System.Drawing.Color.LightBlue;
+            this.bKoniecRiadOknoFutbal.CausesValidation = false;
+            this.bKoniecRiadOknoFutbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.bKoniecRiadOknoFutbal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.bKoniecRiadOknoFutbal.Location = new System.Drawing.Point(79, 313);
+            this.bKoniecRiadOknoFutbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.bKoniecRiadOknoFutbal.Name = "bKoniecRiadOknoFutbal";
+            this.bKoniecRiadOknoFutbal.Size = new System.Drawing.Size(194, 51);
+            this.bKoniecRiadOknoFutbal.TabIndex = 57;
+            this.bKoniecRiadOknoFutbal.Text = "KONIEC";
+            this.bKoniecRiadOknoFutbal.UseVisualStyleBackColor = false;
+            this.bKoniecRiadOknoFutbal.Click += new System.EventHandler(this.BKoniecRiadOknoFutbal_Click);
             // 
             // label6
             // 
@@ -149,17 +149,17 @@
             this.label3.TabIndex = 52;
             this.label3.Text = "Gól dal tím: ";
             // 
-            // lCasRiadOknoFudbal
+            // lCasRiadOknoFutbal
             // 
-            this.lCasRiadOknoFudbal.AutoSize = true;
-            this.lCasRiadOknoFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
-            this.lCasRiadOknoFudbal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lCasRiadOknoFudbal.Location = new System.Drawing.Point(169, 69);
-            this.lCasRiadOknoFudbal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lCasRiadOknoFudbal.Name = "lCasRiadOknoFudbal";
-            this.lCasRiadOknoFudbal.Size = new System.Drawing.Size(44, 16);
-            this.lCasRiadOknoFudbal.TabIndex = 51;
-            this.lCasRiadOknoFudbal.Text = "00:00";
+            this.lCasRiadOknoFutbal.AutoSize = true;
+            this.lCasRiadOknoFutbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
+            this.lCasRiadOknoFutbal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lCasRiadOknoFutbal.Location = new System.Drawing.Point(169, 69);
+            this.lCasRiadOknoFutbal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lCasRiadOknoFutbal.Name = "lCasRiadOknoFutbal";
+            this.lCasRiadOknoFutbal.Size = new System.Drawing.Size(44, 16);
+            this.lCasRiadOknoFutbal.TabIndex = 51;
+            this.lCasRiadOknoFutbal.Text = "00:00";
             // 
             // label2
             // 
@@ -173,17 +173,17 @@
             this.label2.TabIndex = 50;
             this.label2.Text = "Aktuálny čas:";
             // 
-            // lPolcasRiadOknoFudbal
+            // lPolcasRiadOknoFutbal
             // 
-            this.lPolcasRiadOknoFudbal.AutoSize = true;
-            this.lPolcasRiadOknoFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
-            this.lPolcasRiadOknoFudbal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lPolcasRiadOknoFudbal.Location = new System.Drawing.Point(182, 42);
-            this.lPolcasRiadOknoFudbal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lPolcasRiadOknoFudbal.Name = "lPolcasRiadOknoFudbal";
-            this.lPolcasRiadOknoFudbal.Size = new System.Drawing.Size(16, 16);
-            this.lPolcasRiadOknoFudbal.TabIndex = 49;
-            this.lPolcasRiadOknoFudbal.Text = "1";
+            this.lPolcasRiadOknoFutbal.AutoSize = true;
+            this.lPolcasRiadOknoFutbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
+            this.lPolcasRiadOknoFutbal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lPolcasRiadOknoFutbal.Location = new System.Drawing.Point(182, 42);
+            this.lPolcasRiadOknoFutbal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lPolcasRiadOknoFutbal.Name = "lPolcasRiadOknoFutbal";
+            this.lPolcasRiadOknoFutbal.Size = new System.Drawing.Size(16, 16);
+            this.lPolcasRiadOknoFutbal.TabIndex = 49;
+            this.lPolcasRiadOknoFutbal.Text = "1";
             // 
             // label1
             // 
@@ -197,33 +197,33 @@
             this.label1.TabIndex = 48;
             this.label1.Text = "Aktuálny polčas:";
             // 
-            // bStopFudbal
+            // bStopFutbal
             // 
-            this.bStopFudbal.BackColor = System.Drawing.Color.LightBlue;
-            this.bStopFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.bStopFudbal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bStopFudbal.Location = new System.Drawing.Point(227, 67);
-            this.bStopFudbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.bStopFudbal.Name = "bStopFudbal";
-            this.bStopFudbal.Size = new System.Drawing.Size(74, 23);
-            this.bStopFudbal.TabIndex = 46;
-            this.bStopFudbal.Text = "STOP";
-            this.bStopFudbal.UseVisualStyleBackColor = false;
-            this.bStopFudbal.Click += new System.EventHandler(this.BStopFudbal_Click);
+            this.bStopFutbal.BackColor = System.Drawing.Color.LightBlue;
+            this.bStopFutbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bStopFutbal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.bStopFutbal.Location = new System.Drawing.Point(227, 67);
+            this.bStopFutbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.bStopFutbal.Name = "bStopFutbal";
+            this.bStopFutbal.Size = new System.Drawing.Size(74, 23);
+            this.bStopFutbal.TabIndex = 46;
+            this.bStopFutbal.Text = "STOP";
+            this.bStopFutbal.UseVisualStyleBackColor = false;
+            this.bStopFutbal.Click += new System.EventHandler(this.BStopFutbal_Click);
             // 
-            // bStartFudbal
+            // bStartFutbal
             // 
-            this.bStartFudbal.BackColor = System.Drawing.Color.LightBlue;
-            this.bStartFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.bStartFudbal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bStartFudbal.Location = new System.Drawing.Point(227, 37);
-            this.bStartFudbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.bStartFudbal.Name = "bStartFudbal";
-            this.bStartFudbal.Size = new System.Drawing.Size(74, 23);
-            this.bStartFudbal.TabIndex = 45;
-            this.bStartFudbal.Text = "ŠTART";
-            this.bStartFudbal.UseVisualStyleBackColor = false;
-            this.bStartFudbal.Click += new System.EventHandler(this.BStartFudbal_Click);
+            this.bStartFutbal.BackColor = System.Drawing.Color.LightBlue;
+            this.bStartFutbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bStartFutbal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.bStartFutbal.Location = new System.Drawing.Point(227, 37);
+            this.bStartFutbal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.bStartFutbal.Name = "bStartFutbal";
+            this.bStartFutbal.Size = new System.Drawing.Size(74, 23);
+            this.bStartFutbal.TabIndex = 45;
+            this.bStartFutbal.Text = "ŠTART";
+            this.bStartFutbal.UseVisualStyleBackColor = false;
+            this.bStartFutbal.Click += new System.EventHandler(this.BStartFutbal_Click);
             // 
             // tBPredlzenie
             // 
@@ -289,7 +289,7 @@
             this.bStat.UseVisualStyleBackColor = false;
             this.bStat.Click += new System.EventHandler(this.BStat_Click);
             // 
-            // RiadiaceOknoFudbal
+            // RiadiaceOknoFutbal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -301,29 +301,29 @@
             this.Controls.Add(this.reklama);
             this.Controls.Add(this.tBPredlzenie);
             this.Controls.Add(this.predlzenie);
-            this.Controls.Add(this.bRealCasRiadOknoFudbal);
+            this.Controls.Add(this.bRealCasRiadOknoFutbal);
             this.Controls.Add(this.bGolDomaci);
             this.Controls.Add(this.bGolHostia);
-            this.Controls.Add(this.bKoniecRiadOknoFudbal);
+            this.Controls.Add(this.bKoniecRiadOknoFutbal);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tBHracGol);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.lCasRiadOknoFudbal);
+            this.Controls.Add(this.lCasRiadOknoFutbal);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lPolcasRiadOknoFudbal);
+            this.Controls.Add(this.lPolcasRiadOknoFutbal);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.bStopFudbal);
-            this.Controls.Add(this.bStartFudbal);
+            this.Controls.Add(this.bStopFutbal);
+            this.Controls.Add(this.bStartFutbal);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Name = "RiadiaceOknoFudbal";
+            this.Name = "RiadiaceOknoFutbal";
             this.Text = "Riadiace okno";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RiadiaceOknoFudbal_FormClosing);
-            this.Load += new System.EventHandler(this.RiadiaceOknoFudbal_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RiadiaceOknoFutbal_FormClosing);
+            this.Load += new System.EventHandler(this.RiadiaceOknoFutbal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,20 +331,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Button bRealCasRiadOknoFudbal;
+        private System.Windows.Forms.Button bRealCasRiadOknoFutbal;
         private System.Windows.Forms.Button bGolDomaci;
         private System.Windows.Forms.Button bGolHostia;
-        private System.Windows.Forms.Button bKoniecRiadOknoFudbal;
+        private System.Windows.Forms.Button bKoniecRiadOknoFutbal;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tBHracGol;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lCasRiadOknoFudbal;
+        private System.Windows.Forms.Label lCasRiadOknoFutbal;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lPolcasRiadOknoFudbal;
+        private System.Windows.Forms.Label lPolcasRiadOknoFutbal;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button bStopFudbal;
-        private System.Windows.Forms.Button bStartFudbal;
+        private System.Windows.Forms.Button bStopFutbal;
+        private System.Windows.Forms.Button bStartFutbal;
         private System.Windows.Forms.TextBox tBPredlzenie;
         private System.Windows.Forms.Button predlzenie;
         private System.Windows.Forms.Button reklama;

@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
 
-namespace FudbalModul
+namespace FutbalModul
 {
     public partial class RiadiaceOknoFutbal : Form
     {
@@ -39,34 +39,34 @@ namespace FudbalModul
 
         }
         
-        private void BStartFudbal_Click(object sender, EventArgs e)
+        private void BStartFutbal_Click(object sender, EventArgs e)
         {
             tabula.StartCasovac();
         }
 
-        private void BStopFudbal_Click(object sender, EventArgs e)
+        private void BStopFutbal_Click(object sender, EventArgs e)
         {
             tabula.StopCasovac();
         }
 
-        private void BRealCasRiadOknoFudbal_Click(object sender, EventArgs e)
+        private void BRealCasRiadOknoFutbal_Click(object sender, EventArgs e)
         {
             if (tabula.IdeCas())
             {
                 MessageBox.Show("Pre zobrazenie realneho času treba stopnuť hru");
             }
-            else if (bRealCasRiadOknoFudbal.Text == "Hrací čas")
+            else if (bRealCasRiadOknoFutbal.Text == "Hrací čas")
             {
                 tabula.HraciCas
                     
                     
                     ();
-                bRealCasRiadOknoFudbal.Text = "Realny čas";
+                bRealCasRiadOknoFutbal.Text = "Realny čas";
             }
             else
             {
                 tabula.RealnyCas();
-                bRealCasRiadOknoFudbal.Text = "Hrací čas";
+                bRealCasRiadOknoFutbal.Text = "Hrací čas";
             }
         }
 
@@ -90,7 +90,7 @@ namespace FudbalModul
             }
         }
 
-        private void BKoniecRiadOknoFudbal_Click(object sender, EventArgs e)
+        private void BKoniecRiadOknoFutbal_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -104,17 +104,17 @@ namespace FudbalModul
         }
         public void KoniecHry()
         {
-            bStartFudbal.Visible = false;
+            bStartFutbal.Visible = false;
             predlzenie.Visible = true;
             tBPredlzenie.Visible = true;
         }
         public void NastavPolcas(string t)
         {
-            lPolcasRiadOknoFudbal.Text =  t;
+            lPolcasRiadOknoFutbal.Text =  t;
         }
         public void NastavCas(string t)
         {
-            lCasRiadOknoFudbal.Text = t;
+            lCasRiadOknoFutbal.Text = t;
         }
 
         private void Predlzenie_Click(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace FudbalModul
             try
             {
                 int pred = Int32.Parse(tBPredlzenie.Text);
-                bStartFudbal.Visible = true;
+                bStartFutbal.Visible = true;
                 tabula.Predlzenie(pred);
                 tBPredlzenie.Text = "";
             }
@@ -132,7 +132,7 @@ namespace FudbalModul
             }
         }
 
-        private void RiadiaceOknoFudbal_Load(object sender, EventArgs e)
+        private void RiadiaceOknoFutbal_Load(object sender, EventArgs e)
         {
             var priecinokPluginov = Path.Combine(new DirectoryInfo(".").FullName, "pluginy");
             var moduly = SpracovavacModulov.NacitajModuly(priecinokPluginov);
@@ -158,7 +158,7 @@ namespace FudbalModul
             }
             else
             {
-                MessageBox.Show("Pre zobrazenie reklamytreba stopnuť hru");
+                MessageBox.Show("Pre zobrazenie reklamy treba stopnuť hru");
             }
         }
 
@@ -166,7 +166,7 @@ namespace FudbalModul
         {
             if (!tabula.IdeCas())
             {
-                OvladacStat s = new OvladacStat(idTimHostia,iDTimDomaci, hostia, domaci, dat,"Fudbal");
+                OvladacStat s = new OvladacStat(idTimHostia,iDTimDomaci, hostia, domaci, dat,"Futbal");
                 s.ShowDialog();
             }
             else
@@ -175,7 +175,7 @@ namespace FudbalModul
             }
         }
 
-        private void RiadiaceOknoFudbal_FormClosing(object sender, FormClosingEventArgs e)
+        private void RiadiaceOknoFutbal_FormClosing(object sender, FormClosingEventArgs e)
         {
             Zavri();
         }

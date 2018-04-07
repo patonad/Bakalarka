@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using svetelna_tabula;
-namespace FudbalModul
+namespace FutbalModul
 {
     
     public partial class UvodneMenuFutbal : Form
@@ -22,11 +22,11 @@ namespace FudbalModul
             dat.Pripoj();
         }
 
-        private void LStartFudbal_Click(object sender, EventArgs e)
+        private void LStartFutbal_Click(object sender, EventArgs e)
         {
             bool je = false;
             int idZapasu = 0;
-            int hos = dat.ZistiCiJeTim(tBHostia.Text, "Fudbal");
+            int hos = dat.ZistiCiJeTim(tBHostia.Text, "Futbal");
             if (hos == 0)
             {
                 MessageBox.Show("Tím " + tBHostia.Text + " nebol najdený.");
@@ -35,7 +35,7 @@ namespace FudbalModul
             {
                 je = true;
             }
-            int dom = dat.ZistiCiJeTim(tBDomaci.Text, "Fudbal");
+            int dom = dat.ZistiCiJeTim(tBDomaci.Text, "Futbal");
             if (dom == 0)
             {
                 MessageBox.Show("Tím " + tBDomaci.Text + " nebol najdený.");
@@ -69,13 +69,13 @@ namespace FudbalModul
 
         }
 
-        private void LExitFudbal_Click(object sender, EventArgs e)
+        private void LExitFutbal_Click(object sender, EventArgs e)
         {
             
             this.Close();
         }
 
-        private void UvodneMenuFudbal_FormClosing(object sender, FormClosingEventArgs e)
+        private void UvodneMenuFutbal_FormClosing(object sender, FormClosingEventArgs e)
         {
             dat.Odpoj();
         }

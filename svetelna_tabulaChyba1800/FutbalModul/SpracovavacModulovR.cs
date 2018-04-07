@@ -7,7 +7,7 @@ using System.IO;
 using Rozhranie;
 using System.Reflection;
 
-namespace FudbalModul
+namespace FutbalModul
 {
     class SpracovavacModulov
     {

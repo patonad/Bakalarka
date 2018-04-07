@@ -1,4 +1,4 @@
-﻿namespace FudbalModul
+﻿namespace FutbalModul
 {
     partial class HlavnaPlochaFutbal
     {
@@ -33,9 +33,9 @@
             this.lScoreHOSTIA = new System.Windows.Forms.Label();
             this.LBdomaci = new System.Windows.Forms.Label();
             this.LbHostia = new System.Windows.Forms.Label();
-            this.lPolcasFudbal = new System.Windows.Forms.Label();
+            this.lPolcasFutbal = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lCasFudbal = new System.Windows.Forms.Label();
+            this.lCasFutbal = new System.Windows.Forms.Label();
             this.lGolHrac = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -89,16 +89,16 @@
             // 
             // lPolcasFudbal
             // 
-            this.lPolcasFudbal.AutoSize = true;
-            this.lPolcasFudbal.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lPolcasFudbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.75F);
-            this.lPolcasFudbal.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lPolcasFudbal.Location = new System.Drawing.Point(461, 300);
-            this.lPolcasFudbal.Name = "lPolcasFudbal";
-            this.lPolcasFudbal.Size = new System.Drawing.Size(36, 39);
-            this.lPolcasFudbal.TabIndex = 35;
-            this.lPolcasFudbal.Text = "1";
-            this.lPolcasFudbal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lPolcasFutbal.AutoSize = true;
+            this.lPolcasFutbal.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lPolcasFutbal.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.75F);
+            this.lPolcasFutbal.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lPolcasFutbal.Location = new System.Drawing.Point(461, 300);
+            this.lPolcasFutbal.Name = "lPolcasFudbal";
+            this.lPolcasFutbal.Size = new System.Drawing.Size(36, 39);
+            this.lPolcasFutbal.TabIndex = 35;
+            this.lPolcasFutbal.Text = "1";
+            this.lPolcasFutbal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -111,19 +111,18 @@
             this.label2.Size = new System.Drawing.Size(138, 32);
             this.label2.TabIndex = 34;
             this.label2.Text = "POLČAS:";
-           
             // 
             // lCasFudbal
             // 
-            this.lCasFudbal.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lCasFudbal.Font = new System.Drawing.Font("Arial", 50F, System.Drawing.FontStyle.Bold);
-            this.lCasFudbal.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lCasFudbal.Location = new System.Drawing.Point(292, 170);
-            this.lCasFudbal.Name = "lCasFudbal";
-            this.lCasFudbal.Size = new System.Drawing.Size(215, 91);
-            this.lCasFudbal.TabIndex = 33;
-            this.lCasFudbal.Text = "00:00";
-            this.lCasFudbal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lCasFutbal.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lCasFutbal.Font = new System.Drawing.Font("Arial", 50F, System.Drawing.FontStyle.Bold);
+            this.lCasFutbal.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lCasFutbal.Location = new System.Drawing.Point(292, 170);
+            this.lCasFutbal.Name = "lCasFudbal";
+            this.lCasFutbal.Size = new System.Drawing.Size(215, 91);
+            this.lCasFutbal.TabIndex = 33;
+            this.lCasFutbal.Text = "00:00";
+            this.lCasFutbal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lGolHrac
             // 
@@ -136,7 +135,7 @@
             this.lGolHrac.TabIndex = 40;
             this.lGolHrac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // HlavnaPlochaFudbal
+            // HlavnaPlochaFutbal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,13 +147,13 @@
             this.Controls.Add(this.lScoreHOSTIA);
             this.Controls.Add(this.LBdomaci);
             this.Controls.Add(this.LbHostia);
-            this.Controls.Add(this.lPolcasFudbal);
+            this.Controls.Add(this.lPolcasFutbal);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lCasFudbal);
+            this.Controls.Add(this.lCasFutbal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "HlavnaPlochaFudbal";
-            this.Text = "HlavnaPlochaFudbal";
-            this.Load += new System.EventHandler(this.HlavnaPlochaFudbal_Load);
+            this.Name = "HlavnaPlochaFutbal";
+            this.Text = "HlavnaPlochaFutbal";
+            this.Load += new System.EventHandler(this.HlavnaPlochaFutbal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,9 +165,9 @@
         private System.Windows.Forms.Label lScoreHOSTIA;
         private System.Windows.Forms.Label LBdomaci;
         private System.Windows.Forms.Label LbHostia;
-        private System.Windows.Forms.Label lPolcasFudbal;
+        private System.Windows.Forms.Label lPolcasFutbal;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lCasFudbal;
+        private System.Windows.Forms.Label lCasFutbal;
         private System.Windows.Forms.Label lGolHrac;
     }
 }

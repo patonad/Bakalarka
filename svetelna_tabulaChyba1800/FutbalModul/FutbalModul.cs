@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using System;
 using System.Drawing;
 
-namespace FudbalModul
+namespace FutbalModul
 {
     public class FutbalModul : IModul
     {
@@ -17,7 +17,7 @@ namespace FudbalModul
 
         Image IModul.DajIconu()
         {
-            return Image.FromFile((".\\pluginy\\iconaFudbal.png"));
+            return Image.FromFile((".\\pluginy\\iconaFutbal.png"));
         }
     }
 }

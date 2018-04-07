@@ -7,8 +7,8 @@
     <ProjectGuid>{4878286C-D553-489B-9203-9E04D036B13E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FudbalModul</RootNamespace>
-    <AssemblyName>FudbalModul</AssemblyName>
+    <RootNamespace>FutbalModul</RootNamespace>
+    <AssemblyName>FutbalModul</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
