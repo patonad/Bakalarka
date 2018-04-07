@@ -46,41 +46,30 @@ namespace HokejModul
         }
         private void HlavnaPlochaHokej_Load(object sender, EventArgs e)
         {
-            // casovac
             timer = new System.Timers.Timer();
-            // inerval casovacu
             timer.Interval = 1000;
-            timer.Elapsed += tik;
+            timer.Elapsed += Tik;
             realCasTimer = new System.Timers.Timer();
-            // inerval casovacu
             realCasTimer.Interval = 1000;
-            realCasTimer.Elapsed += kontrolujCas;
-            //ako primarny sa nastavy monitor 0
+            realCasTimer.Elapsed += KontrolujCas;
+
             var primary = Screen.AllScreens.ElementAtOrDefault(0);
-            // ako externy sa nastavi pridavny monitor a ak niejej tak sa nastvi primarny
             var extended = Screen.AllScreens.FirstOrDefault(s => s != primary) ?? primary;
-            // umiestnenie okna
             this.Left = extended.WorkingArea.Left;
             this.Top = extended.WorkingArea.Top;
-            // nasobok v akom pomere treba zvecit original
             float nasobok = (float)extended.WorkingArea.Size.Width / (float)this.Width;
-            //zvecenie
             Scale(new SizeF(nasobok, nasobok));
-            //prejde vsetky labely a zväcsi ich v pomere
             Label label;
             foreach (object item in Controls)
             {
                 label = (Label)item;
                 label.Font = new Font(label.Font.Name, (float)Math.Floor(label.Font.Size * nasobok));
             }
-
-
             LbHostia.Text = hostia;
             LBdomaci.Text = domaci;
 
         }
-       
-        private void tik(object sender, ElapsedEventArgs e)
+        private void Tik(object sender, ElapsedEventArgs e)
         {
             Invoke(new Action(() =>
             {
@@ -88,7 +77,7 @@ namespace HokejModul
                 {
                     if (vylucenyDomaci.Count != 0)
                     {
-                        faulTikDomaci();
+                        FaulTikDomaci();
                     }
                     else
                     {
@@ -99,7 +88,7 @@ namespace HokejModul
                     }
                     if (vylucenyHostia.Count != 0)
                     {
-                        faulTikHostia();
+                        FaulTikHostia();
                     }
                     else
                     {
@@ -127,11 +116,11 @@ namespace HokejModul
                 {
                     s = 2; //kolko trva tretina
                     m = 0;
-                    this.stopCasovac();
+                    this.StopCasovac();
                     if (tretina == 3)
                     {
                         lGolHrac.Text = "";
-                        riadiaceOkno.koniecHry();
+                        riadiaceOkno.KoniecHry();
                         s = 0;
                         m = 0;
 
@@ -141,7 +130,7 @@ namespace HokejModul
                         lGolHrac.Text = "";
                         tretina++;
                         lTretinaHokej.Text = "" + tretina;
-                        riadiaceOkno.nastavTretina("" + tretina);
+                        riadiaceOkno.NastavTretina("" + tretina);
                     }
 
                 }
@@ -149,30 +138,29 @@ namespace HokejModul
                 String aktCas = string.Format("{0}:{1}", m.ToString().PadLeft(2, '0'), s.ToString().PadLeft(2, '0'));
                 lCasHokej.Text = aktCas;
 
-                riadiaceOkno.nastavCas(aktCas);
+                riadiaceOkno.NastavCas(aktCas);
 
             }));
         }
-        public void predlzenie(int cas)
+        public void Predlzenie(int cas)
         {
             m = cas;
             predlzenieCas += cas;
             lTretinaHokej.Text = "P";
-            riadiaceOkno.nastavTretina("P" + tretina);
+            riadiaceOkno.NastavTretina("P" + tretina);
         }
-        public void startCasovac()
+        public void StartCasovac()
         {
             timer.Start();
             casIde = true;
             realCasTimer.Stop();
         }
-        public void stopCasovac()
+        public void StopCasovac()
         {
             timer.Stop();
             casIde = false;
         }
-
-        public bool asistencia(string cislo, int id_tim)
+        public bool Asistencia(string cislo, int id_tim)
         {
             int x = 0;
             if (idZapasu != 0)
@@ -192,7 +180,7 @@ namespace HokejModul
                     {
 
 
-                        dat.PridajZaznam(idZapasu, id_tim, x, spracujCas(), "asistencia");
+                        dat.PridajZaznam(idZapasu, id_tim, x, SpracujCas(), "asistencia");
                         dat.UpravAsistencia(id_tim, x);
                         return true;
 
@@ -224,7 +212,7 @@ namespace HokejModul
                 }
             }
         }
-        private string spracujCas()
+        private string SpracujCas()
         {
             string cas;
             if (s == 0)
@@ -238,37 +226,31 @@ namespace HokejModul
 
 
         }
-        public bool ideCas()
+        public bool IdeCas()
         {
             return casIde;
         }
-
-        public void realnyCas()
+        public void RealnyCas()
         {
             realCasTimer.Start();
         }
-        public void stopRealnyCas()
+        public void StopRealnyCas()
         {
             realCasTimer.Stop();
         }
-        private void kontrolujCas(object sender, ElapsedEventArgs e)
+        private void KontrolujCas(object sender, ElapsedEventArgs e)
         {
             String cas = DateTime.Now.ToShortTimeString();
-            //mut.WaitOne();
-
             Invoke((MethodInvoker)delegate { lCasHokej.Text = cas; });
-            // lCasHokej.Text = cas;
-            //  mut.ReleaseMutex();
         }
-        public void hraciCas()
+        public void HraciCas()
         {
             Invoke((MethodInvoker)delegate { lCasHokej.Text = string.Format("{0}:{1}", m.ToString().PadLeft(2, '0'), s.ToString().PadLeft(2, '0')); ; });
             realCasTimer.Stop();
         }
-
-        public void gol(string cisloGol, string cisloAsis, int id_tim, string kto)
+        public void Gol(string cisloGol, string cisloAsis, int id_tim, string kto)
         {
-            if (asistencia(cisloAsis, id_tim))
+            if (Asistencia(cisloAsis, id_tim))
             {
                 int x = 0;
 
@@ -277,13 +259,13 @@ namespace HokejModul
                     MessageBox.Show("Hráč neexzistuje");
                     return;
                 }
-                stopCasovac();
+                StopCasovac();
 
                 string hrac = dat.ZistiCiJeHrac(id_tim, x);
 
                 if (idZapasu == 0)
                 {
-                    zaznamenajGol(kto);
+                    ZaznamenajGol(kto);
                 }
                 else if (hrac != "")
                 {
@@ -292,8 +274,8 @@ namespace HokejModul
                     casZobrazenia = 5;
 
 
-                    dat.PridajZaznam(idZapasu, id_tim, x, spracujCas(), "gol");
-                    zaznamenajGol(kto);
+                    dat.PridajZaznam(idZapasu, id_tim, x, SpracujCas(), "gol");
+                    ZaznamenajGol(kto);
                     dat.UpravSkore(idZapasu, scoreHostia, scoreDomaci);
                     dat.UpravGol(id_tim, x);
                 }
@@ -305,7 +287,7 @@ namespace HokejModul
 
             }
         }
-        private void pridajFaul(string kto)
+        private void PridajFaul(string kto)
         {
             if (kto == "h")
             {
@@ -316,7 +298,7 @@ namespace HokejModul
                 vylucenyDomaci.Insert(0, 5);
             }
         }
-        private void zaznamenajGol(string kto)
+        private void ZaznamenajGol(string kto)
         {
             if (kto == "h")
             {
@@ -330,7 +312,7 @@ namespace HokejModul
             }
 
         }
-        public void faul(string cislo, int id_tim, string kto)
+        public void Faul(string cislo, int id_tim, string kto)
         {
 
             int x = 0;
@@ -340,19 +322,19 @@ namespace HokejModul
                 MessageBox.Show("Hráč neexzistuje");
                 return;
             }
-            stopCasovac();
+            StopCasovac();
 
             string hrac = dat.ZistiCiJeHrac(id_tim, x);
 
             if (idZapasu == 0)
             {
-                pridajFaul(kto);
+                PridajFaul(kto);
             }
             else if (hrac != "")
             {
-                dat.PridajZaznam(idZapasu, id_tim, x, spracujCas(), "faul");
+                dat.PridajZaznam(idZapasu, id_tim, x, SpracujCas(), "faul");
                 dat.UpravFaul(id_tim, x);
-                pridajFaul(kto);
+                PridajFaul(kto);
             }
             else
             {
@@ -365,12 +347,11 @@ namespace HokejModul
 
 
         }
-        private String spracujCasFaul(int Cas)
+        private String SpracujCasFaul(int Cas)
         {
             return string.Format("{0}:{1}", (Cas / 60).ToString().PadLeft(2, '0'), (Cas % 60).ToString().PadLeft(2, '0'));
         }
-
-        private void faulTikDomaci()
+        private void FaulTikDomaci()
         {
             int a = vylucenyDomaci.Count - 1;
             int kolko;
@@ -390,12 +371,12 @@ namespace HokejModul
                 {
                     label9.Visible = true;
                     lbDomPe.Visible = true;
-                    label9.Text = spracujCasFaul(cas);
+                    label9.Text = SpracujCasFaul(cas);
                 }
                 else
                 {
                     label13.Visible = true;
-                    label13.Text = spracujCasFaul(cas);
+                    label13.Text = SpracujCasFaul(cas);
                 }
 
                 cas--;
@@ -414,8 +395,7 @@ namespace HokejModul
                 label13.Visible = false;
             }
         }
-
-        private void faulTikHostia()
+        private void FaulTikHostia()
         {
             int a = vylucenyHostia.Count - 1;
             int kolko;
@@ -435,13 +415,13 @@ namespace HokejModul
                 {
                     label7.Visible = true;
                     lbHostiaPe.Visible = true;
-                    label7.Text = spracujCasFaul(cas);
+                    label7.Text = SpracujCasFaul(cas);
                 }
                 else
                 {
                     label11.Visible = true;
                     lbHostiaPe.Visible = true;
-                    label11.Text = spracujCasFaul(cas);
+                    label11.Text = SpracujCasFaul(cas);
                 }
 
                 cas--;

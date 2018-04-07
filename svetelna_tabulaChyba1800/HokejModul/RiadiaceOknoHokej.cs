@@ -20,13 +20,7 @@ namespace HokejModul
         private UvodneMenuHokej okno;
         int idTimHostia, iDTimDomaci;
         string hostia, domaci;
-        /// <summary>
-        /// Konstruktor pre vytvorenie riadiaceho okna 
-        /// nastavuje nazvi pre buttony
-        /// </summary>
-        /// <param name="pHostia"></param>
-        /// <param name="pDomaci"></param>
-        /// <param name="pOkno"></param>
+
         public RiadiaceOknoHokej(string pHostia, string pDomaci, UvodneMenuHokej pOkno, Databaza pDat, int pId, int pHos, int pDom)
         {
             this.hostia = pHostia;
@@ -44,30 +38,16 @@ namespace HokejModul
             bFaulHostia.Text = pHostia;
 
         }
-        ~RiadiaceOknoHokej()
-        {
-            tabula.Close();
-        }
-        /// <summary>
-        /// Po kliknuti na button koniec sa ukonci tabula a riadiace okno a zobrazi sa naspät uvoden menu hokeju
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
 
-
-
-
-
-
-        private void bKoniecRiadOknoHokej_Click(object sender, EventArgs e)
+        private void BKoniecRiadOknoHokej_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void zavri()
+        private void Zavri()
         {
-            tabula.stopCasovac();
-            tabula.stopRealnyCas();
+            tabula.StopCasovac();
+            tabula.StopRealnyCas();
             tabula.Close();
             this.Close();
             okno.Visible = true;
@@ -75,96 +55,96 @@ namespace HokejModul
 
 
 
-        public void koniecHry()
+        public void KoniecHry()
         {
             bStartHokej.Visible = false;
             predlzenie.Visible = true;
             tBPredlzenie.Visible = true;
         }
 
-        public void nastavTretina(string t)
+        public void NastavTretina(string t)
         {
             lTretinaRiadOknoHokej.Text = t;
         }
-        public void nastavCas(string t)
+        public void NastavCas(string t)
         {
             lCasRiadOknoHokej.Text = t;
         }
 
-        private void bStartHokej_Click(object sender, EventArgs e)
+        private void BStartHokej_Click(object sender, EventArgs e)
         {
-            tabula.startCasovac();
+            tabula.StartCasovac();
         }
 
-        private void bStopHokej_Click(object sender, EventArgs e)
+        private void BStopHokej_Click(object sender, EventArgs e)
         {
-            tabula.stopCasovac();
+            tabula.StopCasovac();
         }
 
-        private void bGolHostia_Click(object sender, EventArgs e)
+        private void BGolHostia_Click(object sender, EventArgs e)
         {
             if (tBHracGol.Text != "")
             {
-                tabula.gol(tBHracGol.Text, tBAsistencia.Text, idTimHostia, "h");
+                tabula.Gol(tBHracGol.Text, tBAsistencia.Text, idTimHostia, "h");
                 tBHracGol.Text = "";
                 tBAsistencia.Text = "";
             }
         }
 
-        private void bGolDomaci_Click(object sender, EventArgs e)
+        private void BGolDomaci_Click(object sender, EventArgs e)
         {
             if (tBHracGol.Text != "")
             {
-                tabula.gol(tBHracGol.Text, tBAsistencia.Text, iDTimDomaci, "d");
+                tabula.Gol(tBHracGol.Text, tBAsistencia.Text, iDTimDomaci, "d");
                 tBHracGol.Text = "";
                 tBAsistencia.Text = "";
             }
         }
 
-        private void bFaulHostia_Click(object sender, EventArgs e)
+        private void BFaulHostia_Click(object sender, EventArgs e)
         {
             if (tBHracFaul.Text != "")
             {
-                tabula.faul(tBHracFaul.Text, idTimHostia, "h");
+                tabula.Faul(tBHracFaul.Text, idTimHostia, "h");
                 tBHracFaul.Text = "";
             }
         }
 
-        private void bFaulDomaci_Click(object sender, EventArgs e)
+        private void BFaulDomaci_Click(object sender, EventArgs e)
         {
             if (tBHracFaul.Text != "")
             {
-               tabula.faul(tBHracFaul.Text, iDTimDomaci, "d");
+                tabula.Faul(tBHracFaul.Text, iDTimDomaci, "d");
                 tBHracFaul.Text = "";
             }
         }
 
-        private void bRealCasRiadOknoHokej_Click(object sender, EventArgs e)
+        private void BRealCasRiadOknoHokej_Click(object sender, EventArgs e)
         {
-            if (tabula.ideCas())
+            if (tabula.IdeCas())
             {
                 MessageBox.Show("Pre zobrazenie realneho času treba stopnuť hru");
             }
             else if (bRealCasRiadOknoHokej.Text == "Hrací čas")
             {
-                tabula.hraciCas();
+                tabula.HraciCas();
                 bRealCasRiadOknoHokej.Text = "Realny čas";
             }
             else
             {
-                tabula.realnyCas();
+                tabula.RealnyCas();
                 bRealCasRiadOknoHokej.Text = "Hrací čas";
             }
 
         }
 
-        private void predlzenie_Click(object sender, EventArgs e)
+        private void Predlzenie_Click(object sender, EventArgs e)
         {
             try
             {
                 int pred = Int32.Parse(tBPredlzenie.Text);
                 bStartHokej.Visible = true;
-                tabula.predlzenie(pred);
+                tabula.Predlzenie(pred);
                 tBPredlzenie.Text = "";
             }
             catch
@@ -182,24 +162,18 @@ namespace HokejModul
             var moduly = SpracovavacModulov.NacitajModuly(priecinokPluginov);
             foreach (Reklama modul in moduly)
             {
-
-
                 {
 
                     reklama.Tag = modul;
                     reklama.Text = modul.GetType().Name;
-                    //Image = Image.FromFile(@"Cicon.png").GetThumbnailImage(100, 100, null, IntPtr.Zero)
-
                     reklama.Visible = true;
-
-
                 }
 
             }
         }
-        private void reklama_Click(object sender, EventArgs e)
+        private void Reklama_Click(object sender, EventArgs e)
         {
-            if (!tabula.ideCas())
+            if (!tabula.IdeCas())
             {
                 var button = (Button)sender;
                 var modul = (Reklama)button.Tag;
@@ -211,12 +185,12 @@ namespace HokejModul
             }
         }
 
-        private void bStat_Click(object sender, EventArgs e)
+        private void BStat_Click(object sender, EventArgs e)
         {
-            if (!tabula.ideCas())
+            if (!tabula.IdeCas())
             {
-                OvladacStat s = new OvladacStat(idTimHostia,iDTimDomaci,hostia,domaci,dat,"Hokej");
-                
+                OvladacStat s = new OvladacStat(idTimHostia, iDTimDomaci, hostia, domaci, dat, "Hokej");
+
                 s.ShowDialog();
             }
             else
@@ -227,7 +201,7 @@ namespace HokejModul
 
         private void RiadiaceOknoHokej_FormClosing(object sender, FormClosingEventArgs e)
         {
-            zavri();
+            Zavri();
         }
     }
 }

@@ -48,7 +48,7 @@
             // StopVideo
             // 
             this.StopVideo.BackColor = System.Drawing.Color.LightBlue;
-            this.StopVideo.Location = new System.Drawing.Point(197, 262);
+            this.StopVideo.Location = new System.Drawing.Point(299, 262);
             this.StopVideo.Name = "StopVideo";
             this.StopVideo.Size = new System.Drawing.Size(75, 23);
             this.StopVideo.TabIndex = 1;
@@ -61,13 +61,13 @@
             this.cLBZoznamReklam.FormattingEnabled = true;
             this.cLBZoznamReklam.Location = new System.Drawing.Point(12, 12);
             this.cLBZoznamReklam.Name = "cLBZoznamReklam";
-            this.cLBZoznamReklam.Size = new System.Drawing.Size(260, 229);
+            this.cLBZoznamReklam.Size = new System.Drawing.Size(362, 229);
             this.cLBZoznamReklam.TabIndex = 4;
             // 
             // pauseVideo
             // 
             this.pauseVideo.BackColor = System.Drawing.Color.LightBlue;
-            this.pauseVideo.Location = new System.Drawing.Point(103, 262);
+            this.pauseVideo.Location = new System.Drawing.Point(158, 262);
             this.pauseVideo.Name = "pauseVideo";
             this.pauseVideo.Size = new System.Drawing.Size(75, 23);
             this.pauseVideo.TabIndex = 5;
@@ -80,7 +80,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(284, 307);
+            this.ClientSize = new System.Drawing.Size(386, 307);
             this.Controls.Add(this.pauseVideo);
             this.Controls.Add(this.cLBZoznamReklam);
             this.Controls.Add(this.StopVideo);

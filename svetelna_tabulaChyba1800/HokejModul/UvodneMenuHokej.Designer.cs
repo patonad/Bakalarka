@@ -46,7 +46,7 @@
             this.lExitHokej.TabIndex = 11;
             this.lExitHokej.Text = "Koniec";
             this.lExitHokej.UseVisualStyleBackColor = false;
-            this.lExitHokej.Click += new System.EventHandler(this.lExitHokej_Click);
+            this.lExitHokej.Click += new System.EventHandler(this.LExitHokej_Click);
             // 
             // lStartHokej
             // 
@@ -58,7 +58,7 @@
             this.lStartHokej.TabIndex = 10;
             this.lStartHokej.Text = "Štart";
             this.lStartHokej.UseVisualStyleBackColor = false;
-            this.lStartHokej.Click += new System.EventHandler(this.lStartHokej_Click);
+            this.lStartHokej.Click += new System.EventHandler(this.LStartHokej_Click);
             // 
             // tBHostia
             // 

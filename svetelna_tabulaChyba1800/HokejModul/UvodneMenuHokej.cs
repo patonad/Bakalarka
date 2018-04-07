@@ -26,7 +26,7 @@ namespace HokejModul
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void lStartHokej_Click(object sender, EventArgs e)
+        private void LStartHokej_Click(object sender, EventArgs e)
         {
             bool je = false;
             int idZapasu = 0;
@@ -73,7 +73,7 @@ namespace HokejModul
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void lExitHokej_Click(object sender, EventArgs e)
+        private void LExitHokej_Click(object sender, EventArgs e)
         {
            
             this.Close();

@@ -65,7 +65,7 @@
             this.bGolDomaci.TabIndex = 39;
             this.bGolDomaci.Text = "domáci";
             this.bGolDomaci.UseVisualStyleBackColor = false;
-            this.bGolDomaci.Click += new System.EventHandler(this.bGolDomaci_Click);
+            this.bGolDomaci.Click += new System.EventHandler(this.BGolDomaci_Click);
             // 
             // bGolHostia
             // 
@@ -76,7 +76,7 @@
             this.bGolHostia.TabIndex = 38;
             this.bGolHostia.Text = "hostia";
             this.bGolHostia.UseVisualStyleBackColor = false;
-            this.bGolHostia.Click += new System.EventHandler(this.bGolHostia_Click);
+            this.bGolHostia.Click += new System.EventHandler(this.BGolHostia_Click);
             // 
             // bKoniecRiadOknoHokej
             // 
@@ -89,7 +89,7 @@
             this.bKoniecRiadOknoHokej.TabIndex = 37;
             this.bKoniecRiadOknoHokej.Text = "KONIEC";
             this.bKoniecRiadOknoHokej.UseVisualStyleBackColor = false;
-            this.bKoniecRiadOknoHokej.Click += new System.EventHandler(this.bKoniecRiadOknoHokej_Click);
+            this.bKoniecRiadOknoHokej.Click += new System.EventHandler(this.BKoniecRiadOknoHokej_Click);
             // 
             // label6
             // 
@@ -182,7 +182,7 @@
             this.bStopHokej.TabIndex = 26;
             this.bStopHokej.Text = "STOP";
             this.bStopHokej.UseVisualStyleBackColor = false;
-            this.bStopHokej.Click += new System.EventHandler(this.bStopHokej_Click);
+            this.bStopHokej.Click += new System.EventHandler(this.BStopHokej_Click);
             // 
             // bStartHokej
             // 
@@ -193,7 +193,7 @@
             this.bStartHokej.TabIndex = 25;
             this.bStartHokej.Text = "ŠTART";
             this.bStartHokej.UseVisualStyleBackColor = false;
-            this.bStartHokej.Click += new System.EventHandler(this.bStartHokej_Click);
+            this.bStartHokej.Click += new System.EventHandler(this.BStartHokej_Click);
             // 
             // bRealCasRiadOknoHokej
             // 
@@ -204,7 +204,7 @@
             this.bRealCasRiadOknoHokej.TabIndex = 44;
             this.bRealCasRiadOknoHokej.Text = "Reálny čas";
             this.bRealCasRiadOknoHokej.UseVisualStyleBackColor = false;
-            this.bRealCasRiadOknoHokej.Click += new System.EventHandler(this.bRealCasRiadOknoHokej_Click);
+            this.bRealCasRiadOknoHokej.Click += new System.EventHandler(this.BRealCasRiadOknoHokej_Click);
             // 
             // tretina
             // 
@@ -234,7 +234,7 @@
             this.bFaulHostia.TabIndex = 40;
             this.bFaulHostia.Text = "hostia";
             this.bFaulHostia.UseVisualStyleBackColor = false;
-            this.bFaulHostia.Click += new System.EventHandler(this.bFaulHostia_Click);
+            this.bFaulHostia.Click += new System.EventHandler(this.BFaulHostia_Click);
             // 
             // bFaulDomaci
             // 
@@ -245,7 +245,7 @@
             this.bFaulDomaci.TabIndex = 41;
             this.bFaulDomaci.Text = "domáci";
             this.bFaulDomaci.UseVisualStyleBackColor = false;
-            this.bFaulDomaci.Click += new System.EventHandler(this.bFaulDomaci_Click);
+            this.bFaulDomaci.Click += new System.EventHandler(this.BFaulDomaci_Click);
             // 
             // tBHracFaul
             // 
@@ -276,7 +276,7 @@
             this.predlzenie.Text = "Predlženie";
             this.predlzenie.UseVisualStyleBackColor = false;
             this.predlzenie.Visible = false;
-            this.predlzenie.Click += new System.EventHandler(this.predlzenie_Click);
+            this.predlzenie.Click += new System.EventHandler(this.Predlzenie_Click);
             // 
             // tBPredlzenie
             // 
@@ -297,7 +297,7 @@
             this.reklama.Text = "Reklama";
             this.reklama.UseVisualStyleBackColor = false;
             this.reklama.Visible = false;
-            this.reklama.Click += new System.EventHandler(this.reklama_Click);
+            this.reklama.Click += new System.EventHandler(this.Reklama_Click);
             // 
             // bStat
             // 
@@ -308,7 +308,7 @@
             this.bStat.TabIndex = 48;
             this.bStat.Text = "Štatistiky";
             this.bStat.UseVisualStyleBackColor = false;
-            this.bStat.Click += new System.EventHandler(this.bStat_Click);
+            this.bStat.Click += new System.EventHandler(this.BStat_Click);
             // 
             // label8
             // 

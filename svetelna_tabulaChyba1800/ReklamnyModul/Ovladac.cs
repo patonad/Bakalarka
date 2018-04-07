@@ -37,7 +37,10 @@ namespace ReklamnyModul
         {
             if (JeZakliknuetVideo())
             {
-                z = new Zobrazovac();
+                if (z == null)
+                {
+                    z = new Zobrazovac();
+                }
                 AxWMPLib.AxWindowsMediaPlayer prehravac = z.WMP();
                 WMPLib.IWMPPlaylist playlist = prehravac.playlistCollection.newPlaylist("myplaylist");
                 WMPLib.IWMPMedia media;
