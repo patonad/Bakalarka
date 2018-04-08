@@ -37,7 +37,7 @@
             // StartVideo
             // 
             this.StartVideo.BackColor = System.Drawing.Color.LightBlue;
-            this.StartVideo.Location = new System.Drawing.Point(12, 262);
+            this.StartVideo.Location = new System.Drawing.Point(158, 262);
             this.StartVideo.Name = "StartVideo";
             this.StartVideo.Size = new System.Drawing.Size(75, 23);
             this.StartVideo.TabIndex = 0;
@@ -48,7 +48,7 @@
             // StopVideo
             // 
             this.StopVideo.BackColor = System.Drawing.Color.LightBlue;
-            this.StopVideo.Location = new System.Drawing.Point(299, 262);
+            this.StopVideo.Location = new System.Drawing.Point(376, 262);
             this.StopVideo.Name = "StopVideo";
             this.StopVideo.Size = new System.Drawing.Size(75, 23);
             this.StopVideo.TabIndex = 1;
@@ -61,13 +61,13 @@
             this.cLBZoznamReklam.FormattingEnabled = true;
             this.cLBZoznamReklam.Location = new System.Drawing.Point(12, 12);
             this.cLBZoznamReklam.Name = "cLBZoznamReklam";
-            this.cLBZoznamReklam.Size = new System.Drawing.Size(362, 229);
+            this.cLBZoznamReklam.Size = new System.Drawing.Size(591, 229);
             this.cLBZoznamReklam.TabIndex = 4;
             // 
             // pauseVideo
             // 
             this.pauseVideo.BackColor = System.Drawing.Color.LightBlue;
-            this.pauseVideo.Location = new System.Drawing.Point(158, 262);
+            this.pauseVideo.Location = new System.Drawing.Point(267, 262);
             this.pauseVideo.Name = "pauseVideo";
             this.pauseVideo.Size = new System.Drawing.Size(75, 23);
             this.pauseVideo.TabIndex = 5;
@@ -79,13 +79,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(386, 307);
+            this.ClientSize = new System.Drawing.Size(615, 307);
             this.Controls.Add(this.pauseVideo);
             this.Controls.Add(this.cLBZoznamReklam);
             this.Controls.Add(this.StopVideo);
             this.Controls.Add(this.StartVideo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Ovladac";
             this.Text = "Reklama";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ovladac_FormClosing);
