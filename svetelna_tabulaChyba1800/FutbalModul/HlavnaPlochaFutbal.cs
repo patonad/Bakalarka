@@ -72,7 +72,7 @@ namespace FutbalModul
         
         public void Predlzenie(int cas)
         {
-            predlzenieCas = cas;
+            predlzenieCas += cas;
             lPolcasFutbal.Text = "P";
             riadiaceOkno.NastavPolcas("" + polcas);
         }
@@ -88,7 +88,7 @@ namespace FutbalModul
                     s = 0;
                 }
                 // kolko  trva polcas
-                if ((m == 1 && polcas == 1)||( m == 2 && polcas == 2 && predlzenieCas==0) ||( m == predlzenieCas + 90 && polcas == 2))// kolko trva pocas
+                if ((m == 45 && polcas == 1)||( m == 90 && polcas == 2 && predlzenieCas==0) ||( m == predlzenieCas + 90 && polcas == 2))// kolko trva pocas
                 {
                     this.StopCasovac();
                     if (polcas == 2)
@@ -102,8 +102,11 @@ namespace FutbalModul
                     {
                         polcas++;
                     }
-                    lPolcasFutbal.Text = "" + polcas;
-                    riadiaceOkno.NastavPolcas(""+polcas);
+                    if (lPolcasFutbal.Text != "P")
+                    {
+                        lPolcasFutbal.Text = "" + polcas;
+                        riadiaceOkno.NastavPolcas("" + polcas);
+                    }
                 }
 
                 String aktCas = string.Format("{0}:{1}", m.ToString().PadLeft(2, '0'), s.ToString().PadLeft(2, '0'));
@@ -234,7 +237,7 @@ namespace FutbalModul
                 {
 
                     lGolHrac.Text = cisloGol + "  " + hrac;
-                    casZobrazenia = 5;
+                    casZobrazenia = 30;
 
 
                     dat.PridajZaznam(idZapasu, id_tim, x, SpracujCas(), "gol");

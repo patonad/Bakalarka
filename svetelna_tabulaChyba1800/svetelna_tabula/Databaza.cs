@@ -128,6 +128,7 @@ namespace svetelna_tabula
             list.Add("Priezvisko harča");
             list.Add("Počet gólov");
             list.Add("Počet asistencii");
+
             list.Add("Celkove skóre");
             zoznam.Add(list);
             while (reader.Read()) {

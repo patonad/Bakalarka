@@ -114,8 +114,8 @@ namespace HokejModul
                 }
                 if (m == -1)
                 {
-                    s = 2; //kolko trva tretina
-                    m = 0;
+                    s = 0; //kolko trva tretina
+                    m = 20;
                     this.StopCasovac();
                     if (tretina == 3)
                     {
@@ -271,7 +271,7 @@ namespace HokejModul
                 {
 
                     lGolHrac.Text = cisloGol + "  " + hrac;
-                    casZobrazenia = 5;
+                    casZobrazenia = 30;
 
 
                     dat.PridajZaznam(idZapasu, id_tim, x, SpracujCas(), "gol");
@@ -291,11 +291,11 @@ namespace HokejModul
         {
             if (kto == "h")
             {
-                vylucenyHostia.Insert(0, 5);
+                vylucenyHostia.Insert(0, 120);
             }
             else
             {
-                vylucenyDomaci.Insert(0, 5);
+                vylucenyDomaci.Insert(0, 120);
             }
         }
         private void ZaznamenajGol(string kto)
