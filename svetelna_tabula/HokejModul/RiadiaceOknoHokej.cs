@@ -74,6 +74,7 @@ namespace HokejModul
         private void BStartHokej_Click(object sender, EventArgs e)
         {
             tabula.StartCasovac();
+            bRealCasRiadOknoHokej.Text = "Reálny čas";
         }
 
         private void BStopHokej_Click(object sender, EventArgs e)
@@ -123,12 +124,12 @@ namespace HokejModul
         {
             if (tabula.IdeCas())
             {
-                MessageBox.Show("Pre zobrazenie realneho času treba stopnuť hru");
+                MessageBox.Show("Pre zobrazenie reálneho času treba stopnúť hru");
             }
             else if (bRealCasRiadOknoHokej.Text == "Hrací čas")
             {
                 tabula.HraciCas();
-                bRealCasRiadOknoHokej.Text = "Realny čas";
+                bRealCasRiadOknoHokej.Text = "Reálny čas";
             }
             else
             {
@@ -149,7 +150,7 @@ namespace HokejModul
             }
             catch
             {
-                MessageBox.Show("Nezadal si cislo");
+                MessageBox.Show("Nezadal si číslo");
             }
 
 
@@ -165,7 +166,7 @@ namespace HokejModul
                 {
 
                     reklama.Tag = modul;
-                    reklama.Text = modul.GetType().Name;
+                    reklama.Text = "Reklama";
                     reklama.Visible = true;
                 }
 
@@ -181,7 +182,7 @@ namespace HokejModul
             }
             else
             {
-                MessageBox.Show("Pre zobrazenie reklamy treba stopnuť hru");
+                MessageBox.Show("Pre zobrazenie reklamy treba stopnúť hru");
             }
         }
 
@@ -195,7 +196,7 @@ namespace HokejModul
             }
             else
             {
-                MessageBox.Show("Pre zobrazenie štatistýk treba stopnuť hru");
+                MessageBox.Show("Pre zobrazenie štatistík treba stopnúť hru");
             }
         }
 

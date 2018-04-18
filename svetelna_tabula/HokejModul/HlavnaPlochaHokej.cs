@@ -171,7 +171,7 @@ namespace HokejModul
 
                     if (!Int32.TryParse(cislo, out x))
                     {
-                        MessageBox.Show("Hráč neexzistuje");
+                        MessageBox.Show("Hráč neexistuje");
                         return false;
                     }
                     string hrac = dat.ZistiCiJeHrac(id_tim, x);
@@ -188,7 +188,7 @@ namespace HokejModul
                     }
                     else
                     {
-                        MessageBox.Show("Hráč neexzistuje");
+                        MessageBox.Show("Hráč neexistuje");
                         return false;
                     }
 
@@ -203,7 +203,7 @@ namespace HokejModul
                 if (cislo == "") { return true; }
                 if (!Int32.TryParse(cislo, out x))
                 {
-                    MessageBox.Show("Hráč neexzistuje");
+                    MessageBox.Show("Hráč neexistuje");
                     return false;
                 }
                 else
@@ -256,7 +256,7 @@ namespace HokejModul
 
                 if (!Int32.TryParse(cisloGol, out x))
                 {
-                    MessageBox.Show("Hráč neexzistuje");
+                    MessageBox.Show("Hráč neexistuje");
                     return;
                 }
                 StopCasovac();
@@ -281,7 +281,7 @@ namespace HokejModul
                 }
                 else
                 {
-                    MessageBox.Show("Hráč neexzistuje");
+                    MessageBox.Show("Hráč neexistuje");
                     return;
                 }
 
@@ -319,7 +319,7 @@ namespace HokejModul
 
             if (!Int32.TryParse(cislo, out x))
             {
-                MessageBox.Show("Hráč neexzistuje");
+                MessageBox.Show("Hráč neexistuje");
                 return;
             }
             StopCasovac();
@@ -338,7 +338,7 @@ namespace HokejModul
             }
             else
             {
-                MessageBox.Show("Hráč neexzistuje");
+                MessageBox.Show("Hráč neexistuje");
                 return;
             }
 

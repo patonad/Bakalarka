@@ -29,7 +29,7 @@ namespace FutbalModul
             int hos = dat.ZistiCiJeTim(tBHostia.Text, "Futbal");
             if (hos == 0)
             {
-                MessageBox.Show("Tím " + tBHostia.Text + " nebol najdený.");
+                MessageBox.Show("Tím " + tBHostia.Text + " nebol nájdený.");
             }
             else
             {
@@ -38,7 +38,7 @@ namespace FutbalModul
             int dom = dat.ZistiCiJeTim(tBDomaci.Text, "Futbal");
             if (dom == 0)
             {
-                MessageBox.Show("Tím " + tBDomaci.Text + " nebol najdený.");
+                MessageBox.Show("Tím " + tBDomaci.Text + " nebol nájdený.");
             }
             else if (je)
             {

@@ -58,6 +58,7 @@ namespace ReklamnyModul
                 z.Show();
                 prehravac.currentPlaylist = playlist;
                 prehravac.Ctlcontrols.play();
+                pauseVideo.Text = "Pause";
                 prehravac.stretchToFit = true;
             }
             else

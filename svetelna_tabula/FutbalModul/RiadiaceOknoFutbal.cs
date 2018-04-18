@@ -42,6 +42,7 @@ namespace FutbalModul
         private void BStartFutbal_Click(object sender, EventArgs e)
         {
             tabula.StartCasovac();
+            bRealCasRiadOknoFutbal.Text = "Reálny čas";
         }
 
         private void BStopFutbal_Click(object sender, EventArgs e)
@@ -53,7 +54,7 @@ namespace FutbalModul
         {
             if (tabula.IdeCas())
             {
-                MessageBox.Show("Pre zobrazenie realneho času treba stopnuť hru");
+                MessageBox.Show("Pre zobrazenie reálneho času treba stopnúť hru");
             }
             else if (bRealCasRiadOknoFutbal.Text == "Hrací čas")
             {
@@ -61,7 +62,7 @@ namespace FutbalModul
                     
                     
                     ();
-                bRealCasRiadOknoFutbal.Text = "Realny čas";
+                bRealCasRiadOknoFutbal.Text = "Reálny čas";
             }
             else
             {
@@ -128,7 +129,7 @@ namespace FutbalModul
             }
             catch
             {
-                MessageBox.Show("Nezadal si cislo");
+                MessageBox.Show("Nezadal si číslo");
             }
         }
 
@@ -140,7 +141,7 @@ namespace FutbalModul
             {
 
                 reklama.Tag = modul;
-                reklama.Text = modul.GetType().Name;
+                reklama.Text = "Reklama";
                 //Image = Image.FromFile(@"Cicon.png").GetThumbnailImage(100, 100, null, IntPtr.Zero)
 
                 reklama.Visible = true;
@@ -158,7 +159,7 @@ namespace FutbalModul
             }
             else
             {
-                MessageBox.Show("Pre zobrazenie reklamy treba stopnuť hru");
+                MessageBox.Show("Pre zobrazenie reklamy treba stopnúť hru");
             }
         }
 
@@ -171,7 +172,7 @@ namespace FutbalModul
             }
             else
             {
-                MessageBox.Show("Pre zobrazenie štatistýk treba stopnuť hru");
+                MessageBox.Show("Pre zobrazenie štatistík treba stopnúť hru");
             }
         }
 

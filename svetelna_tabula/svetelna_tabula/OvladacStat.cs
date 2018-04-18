@@ -59,7 +59,7 @@ namespace svetelna_tabula
         {
             if (id_hostia == 0 || id_domaci == 0)
             {
-                MessageBox.Show("Tím nebol najdený");
+                MessageBox.Show("Tím nebol nájdený");
             }
             else {
                 if (z2 == null)
@@ -99,7 +99,7 @@ namespace svetelna_tabula
             }
             else
             {
-                MessageBox.Show("Tím nebol najdený");
+                MessageBox.Show("Tím nebol nájdený");
             }
         }
 
@@ -125,7 +125,7 @@ namespace svetelna_tabula
             }
             else
             {
-                MessageBox.Show("Tím nebol najdený");
+                MessageBox.Show("Tím nebol nájdený");
             }
         }
     }

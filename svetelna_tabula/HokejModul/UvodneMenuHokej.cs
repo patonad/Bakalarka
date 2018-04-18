@@ -33,7 +33,7 @@ namespace HokejModul
             int hos = dat.ZistiCiJeTim(tBHostia.Text, "Hokej");
             if ( hos == 0)
             {
-                MessageBox.Show("Tím " + tBHostia.Text + " nebol najdený.");
+                MessageBox.Show("Tím " + tBHostia.Text + " nebol nájdený.");
             }
             else {
                 je = true;
@@ -41,7 +41,7 @@ namespace HokejModul
             int dom = dat.ZistiCiJeTim(tBDomaci.Text, "Hokej");
             if (dom == 0)
             {
-                MessageBox.Show("Tím " + tBDomaci.Text + " nebol najdený.");
+                MessageBox.Show("Tím " + tBDomaci.Text + " nebol nájdený.");
             }else if(je){
                 idZapasu = dat.PridajZapas(hos, dom);
             }

@@ -173,7 +173,7 @@ namespace FutbalModul
 
                     if (!Int32.TryParse(cislo, out x))
                     {
-                        MessageBox.Show("Hráč neexzistuje");
+                        MessageBox.Show("Hráč neexistuje");
                         return false;
                     }
                     string hrac = dat.ZistiCiJeHrac(id_tim, x);
@@ -190,7 +190,7 @@ namespace FutbalModul
                     }
                     else
                     {
-                        MessageBox.Show("Hráč neexzistuje");
+                        MessageBox.Show("Hráč neexistuje");
                         return false;
                     }
 
@@ -205,7 +205,7 @@ namespace FutbalModul
                 if (cislo == "") { return true; }
                 if (!Int32.TryParse(cislo, out x))
                 {
-                    MessageBox.Show("Hráč neexzistuje");
+                    MessageBox.Show("Hráč neexistuje");
                     return false;
                 }
                 else
@@ -222,7 +222,7 @@ namespace FutbalModul
 
                 if (!Int32.TryParse(cisloGol, out x))
                 {
-                    MessageBox.Show("Hráč neexzistuje");
+                    MessageBox.Show("Hráč neexistuje");
                     return;
                 }
                 StopCasovac();
@@ -247,7 +247,7 @@ namespace FutbalModul
                 }
                 else
                 {
-                    MessageBox.Show("Hráč neexzistuje");
+                    MessageBox.Show("Hráč neexistuje");
                     return;
                 }
 
